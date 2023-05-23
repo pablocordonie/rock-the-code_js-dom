@@ -1,9 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --background: #ffffff;
+    --backgroundOpacity: #ffffff00;
+    --primary: #c9082c;
+    --secondary: #002b5c;
+    --paragraph: #0d223f;
+    --paragraphOpacity: #0d223f00;
+    --terciary: #f9a01a;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--paragraph);
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--background);
+    padding: 5rem 1rem;
+}
+
+.swingman-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.swingman-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .swingman-shirt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.swingman-shirt-img {
     width: 15rem;
     height: 16rem;
 }

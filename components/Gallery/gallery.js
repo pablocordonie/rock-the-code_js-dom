@@ -1,20 +1,25 @@
 import swingmanProducts from '../../data/data.js';
 
 const createProducts = (product) => {
-    const li = document.createElement('li');
     const a = document.createElement('a');
+    const h3 = document.createElement('h3');
+    const img = document.createElement('img');
+    const li = document.createElement('li');
+    const p = document.createElement('p');
+
+    li.classList.add('swingman-item');
     a.href = product.link;
-    a.innerText = product.name;
+    a.classList.add('swingman-shirt');
+    h3.innerText = product.name;
     li.appendChild(a);
+    a.appendChild(h3);
 
     //Completamos la información de los productos
-    const img = document.createElement('img');
-    img.classList.add('swingman-shirt');
+    img.classList.add('swingman-shirt-img');
     img.src = `${product.image}`;
     img.alt = product.name;
     a.appendChild(img);
 
-    const p = document.createElement('p');
     p.textContent = `${product.price} €`;
     li.appendChild(p);
 
