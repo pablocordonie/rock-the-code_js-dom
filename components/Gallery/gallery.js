@@ -2,25 +2,23 @@ import swingmanProducts from '../../data/data.js';
 
 const createProducts = (product) => {
     const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = product.link;
+    a.innerText = product.name;
+    li.appendChild(a);
 
     //Completamos la información de los productos
     const img = document.createElement('img');
     img.classList.add('swingman-shirt');
     img.src = `${product.image}`;
     img.alt = product.name;
-    li.appendChild(img);
-
-    const a = document.createElement('a');
-    a.href = product.link;
-    a.textContent = product.name;
-    li.appendChild(a);
+    a.appendChild(img);
 
     const p = document.createElement('p');
     p.textContent = `${product.price} €`;
     li.appendChild(p);
 
     return li;
-
 };
 
 export const galleryTemplate = () => {
@@ -40,7 +38,6 @@ export const galleryTemplate = () => {
 
     const main = document.querySelector('main');
     main.appendChild(ul);
-    console.log(main);
     return main;
 
 };
