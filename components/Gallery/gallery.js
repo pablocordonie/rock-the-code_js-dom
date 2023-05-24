@@ -1,27 +1,29 @@
 import swingmanProducts from '../../data/data.js';
 
 const createProducts = (product) => {
-    const a = document.createElement('a');
-    const h3 = document.createElement('h3');
-    const img = document.createElement('img');
     const li = document.createElement('li');
+    const a = document.createElement('a');
+    const img = document.createElement('img');
+    const h3 = document.createElement('h3');
     const p = document.createElement('p');
 
+    //Completamos la información de los productos
     li.classList.add('swingman-item');
     a.href = product.link;
-    a.classList.add('swingman-shirt');
-    h3.innerText = product.name;
-    li.appendChild(a);
-    a.appendChild(h3);
-
-    //Completamos la información de los productos
-    img.classList.add('swingman-shirt-img');
+    a.classList.add('swingman-card');
+    img.classList.add('swingman-card-img');
     img.src = `${product.image}`;
     img.alt = product.name;
+    li.appendChild(a);
     a.appendChild(img);
 
+
+    h3.innerText = product.name;
+    h3.classList.add('swingman-card-h3');
+    a.appendChild(h3);
+
     p.textContent = `${product.price} €`;
-    li.appendChild(p);
+    a.appendChild(p);
 
     return li;
 };
@@ -33,6 +35,7 @@ export const galleryTemplate = () => {
     ul.classList.add('swingman-gallery');
 
     const h2 = document.createElement('h2');
+    h2.classList.add('swingman-gallery-h2');
     h2.textContent = 'The Official Swingman Shirts';
     ul.appendChild(h2);
 

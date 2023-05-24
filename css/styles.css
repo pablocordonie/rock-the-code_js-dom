@@ -12,11 +12,11 @@
 :root {
     --background: #ffffff;
     --backgroundOpacity: #ffffff00;
-    --primary: #c9082c;
-    --secondary: #002b5c;
+    --primary: #002b5c;
+    --secondary: #c9082c;
     --paragraph: #0d223f;
     --paragraphOpacity: #0d223f00;
-    --terciary: #f9a01a;
+    --terciary: #f9c51a;
 }
 
 h1,
@@ -27,32 +27,43 @@ p {
 }
 
 main {
-    min-height: 100vh;
     background-color: var(--background);
-    padding: 5rem 1rem;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .swingman-gallery {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
+    margin: 5rem 2.5rem;
+    width: 20rem;
+}
+
+.swingman-gallery-h2 {
+    text-align: center;
 }
 
 .swingman-item {
+    width: 18rem;
+}
+
+.swingman-card {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    box-shadow: 0 0 2.5rem -0.5rem var(--terciary);
 }
 
-.swingman-shirt {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.swingman-shirt-img {
+.swingman-card-img {
     width: 15rem;
     height: 16rem;
+}
+
+.swingman-card-h3 {
+    font-size: 1rem;
+    width: 15rem;
+    text-align: center;
 }
