@@ -50,7 +50,7 @@ const swingmanProducts = [
     {
         id: 7,
         name: 'Sacramento Kings Nike Icon Edition Purple Swingman Jersey - Domantas Sabonis - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: 'NBA Store',
         image: 'https://images.footballfanatics.com/sacramento-kings/sacramento-kings-nike-icon-edition-swingman-jersey-purple-domantas-sabonis-mens_ss4_p-13317173+u-inbyx7mujbsb7fs8c8qr+v-93849046473a472da1aa4f2b0027c0ee.jpg?_hv=2&w=340',
         link: 'https://www.nbastore.eu/es/sacramento-kings/sacramento-kings-nike-icon-edition-swingman-jersey-purple-domantas-sabonis-mens/t-14813160+p-56362545180181+z-9-2881658520?_ref=p-DLP%3Am-GRID%3Ai-r7c2%3Apo-23'
@@ -146,7 +146,7 @@ const swingmanProducts = [
     {
         id: 19,
         name: 'New York Knicks City Edition Swingman Jersey - Julius Randle - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22548-home_default/julius-randle-new-york-knicks-city-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/julius-randle-new-york-knicks-city-edition-swingman-jersey-22-23.html'
@@ -154,7 +154,7 @@ const swingmanProducts = [
     {
         id: 20,
         name: 'Los Angeles Clippers Icon Edition Swingman Jersey - Paul George - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22627-home_default/paul-george-los-angeles-clippers-icon-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/paul-george-los-angeles-clippers-icon-edition-swingman-jersey-22-23.html'
@@ -162,7 +162,7 @@ const swingmanProducts = [
     {
         id: 21,
         name: 'Utah Jazz Statement Edition Swingman Jersey - Jordan Clarkson - Kids',
-        price: 74.90,
+        price: 74.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22169-home_default/jordan-clarkson-utah-jazz-statement-edition-swingman-jersey-22-23-junior.jpg',
         link: 'https://basketworld.com/jordan-clarkson-utah-jazz-statement-edition-swingman-jersey-22-23-junior.html'
@@ -170,7 +170,7 @@ const swingmanProducts = [
     {
         id: 22,
         name: 'Miami Heat Classic Edition Swingman Jersey - Tyler Herro - Kids',
-        price: 74.90,
+        price: 74.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22129-home_default/tyler-herro-miami-heat-classic-edition-swingman-jersey-22-23-junior.jpg',
         link: 'https://basketworld.com/tyler-herro-miami-heat-classic-edition-swingman-jersey-22-23-junior.html'
@@ -178,7 +178,7 @@ const swingmanProducts = [
     {
         id: 23,
         name: 'Charlotte Hornets Icon Edition Swingman Jersey - Lamelo Ball - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/21062-home_default/lamelo-ball-charlotte-hornets-icon-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/lamelo-ball-charlotte-hornets-icon-edition-swingman-jersey-22-23.html'
@@ -186,7 +186,7 @@ const swingmanProducts = [
     {
         id: 24,
         name: 'Los Angeles Lakers Association Edition Swingman Jersey - Anthony Davis - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22291-home_default/anthony-davis-los-angeles-lakers-association-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/anthony-davis-los-angeles-lakers-association-edition-swingman-jersey-22-23.html'
@@ -194,7 +194,7 @@ const swingmanProducts = [
     {
         id: 25,
         name: 'Alex Caruso Chicago Bulls Icon Edition Swingman Jersey - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/21856-home_default/alex-caruso-chicago-bulls-icon-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/alex-caruso-chicago-bulls-icon-edition-swingman-jersey-22-23.html'
@@ -202,7 +202,7 @@ const swingmanProducts = [
     {
         id: 26,
         name: 'Philadelphia 76ers Association Edition Swingman Jersey - James Harden - Kids',
-        price: 74.90,
+        price: 74.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/21964-home_default/james-harden-philadelphia-76ers-association-edition-swingman-jersey-22-23-junior.jpg',
         link: 'https://basketworld.com/james-harden-philadelphia-76ers-association-edition-swingman-jersey-22-23-junior.html'
@@ -211,7 +211,7 @@ const swingmanProducts = [
     {
         id: 27,
         name: 'Milwaukee Bucks Icon Edition Swingman Jersey - Giannis Antetokoumpo - Unisex',
-        price: 94.90,
+        price: 94.90.toFixed(2),
         seller: 'Basket World',
         image: 'https://basketworld.com/22287-home_default/giannis-antetokounmpo-milwaukee-bucks-icon-edition-swingman-jersey-22-23.jpg',
         link: 'https://basketworld.com/giannis-antetokounmpo-milwaukee-bucks-icon-edition-swingman-jersey-22-23.html'
@@ -219,7 +219,7 @@ const swingmanProducts = [
     {
         id: 28,
         name: 'Boston Celtics Statement Edition Swingman Jersey - Jayson Tatum - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/168652-home_default/camiseta-jayson-tatum-boston-celtics-22-23-statement-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-jayson-tatum-boston-celtics-22-23-statement-edition-swingman'
@@ -227,7 +227,7 @@ const swingmanProducts = [
     {
         id: 29,
         name: 'Cleveland Cavaliers Icon Edition Swingman Jersey - Darius Garland - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/167136-home_default/darius-garland-cleveland-cavaliers-22-23-icon-edition-swingman-camiseta.jpg',
         link: 'https://24segons.es/es/product/darius-garland-cleveland-cavaliers-22-23-icon-edition-swingman-camiseta'
@@ -235,7 +235,7 @@ const swingmanProducts = [
     {
         id: 30,
         name: 'Golden State Warriors Statement Edition Swingman Jersey - Stephen Curry - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/165206-home_default/camiseta-stephen-curry-golden-state-warriors-22-23-statement-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-stephen-curry-golden-state-warriors-22-23-statement-edition-swingman'
@@ -243,7 +243,7 @@ const swingmanProducts = [
     {
         id: 31,
         name: 'Los Angeles Lakers Statement Edition Swingman Jersey - LeBron James - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/165202-home_default/camiseta-lebron-james-los-angeles-lakers-22-23-statement-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-lebron-james-los-angeles-lakers-22-23-statement-edition-swingman'
@@ -251,7 +251,7 @@ const swingmanProducts = [
     {
         id: 32,
         name: 'Miami Heat City Edition Swingman Jersey - Jimmy Butler - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/164790-home_default/jimmy-butler-miami-heat-22-23-city-edition-swingman-camiseta.jpg',
         link: 'https://24segons.es/es/product/jimmy-butler-miami-heat-22-23-city-edition-swingman-camiseta'
@@ -259,7 +259,7 @@ const swingmanProducts = [
     {
         id: 33,
         name: 'Washington Wizards City Edition Swingman Jersey - Kyle Kuzma - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/162713-home_default/camiseta-kyle-kuzma-washington-wizards-22-23-city-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-kyle-kuzma-washington-wizards-22-23-city-edition-swingman'
@@ -267,7 +267,7 @@ const swingmanProducts = [
     {
         id: 34,
         name: 'Portland Trail Blazers City Edition Swingman Jersey - Damian Lillard - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/162703-home_default/camiseta-damian-lillard-portland-trail-blazers-22-23-city-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-damian-lillard-portland-trail-blazers-22-23-city-edition-swingman'
@@ -275,7 +275,7 @@ const swingmanProducts = [
     {
         id: 35,
         name: 'New Orleans Pelicans City Edition Swingman Jersey - Zion Williamson - Unisex',
-        price: 100,
+        price: 100.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/162705-home_default/camiseta-zion-williamson-new-orleans-pelicans-22-23-city-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-zion-williamson-new-orleans-pelicans-22-23-city-edition-swingman'
@@ -283,7 +283,7 @@ const swingmanProducts = [
     {
         id: 36,
         name: 'Phoenix Suns Icon Edition Swingman Jersey - Chris Paul - Kids',
-        price: 78,
+        price: 78.00.toFixed(2),
         seller: '24Segons',
         image: 'https://24segons.es/168721-home_default/camiseta-junior-chris-paul-phoenix-suns-22-23-icon-edition-swingman.jpg',
         link: 'https://24segons.es/es/product/camiseta-junior-chris-paul-phoenix-suns-22-23-icon-edition-swingman'

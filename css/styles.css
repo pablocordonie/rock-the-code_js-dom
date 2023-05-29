@@ -20,10 +20,13 @@
 }
 
 h1,
-h2,
 h3,
 p {
-  color: var(--paragraph);
+    color: var(--paragraph);
+}
+
+h2 {
+    color: var(--secondary);
 }
 
 p {
@@ -57,7 +60,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
-    box-shadow: 0 0 2.5rem -0.5rem var(--terciary);
+    box-shadow: 0 0 2.5rem -0.5rem var(--primary);
 }
 
 .swingman-card-img {
