@@ -8,10 +8,10 @@ const createProducts = (product) => {
     const p = document.createElement('p');
 
     //Completamos la información de los productos
-    li.classList.add('swingman-item');
+    li.classList.add('rtc--swingman-item');
     a.href = product.link;
-    a.classList.add('swingman-card');
-    img.classList.add('swingman-card-img');
+    a.classList.add('rtc--swingman-card');
+    img.classList.add('rtc--swingman-card-img');
     img.src = `${product.image}`;
     img.alt = product.name;
     li.appendChild(a);
@@ -19,7 +19,7 @@ const createProducts = (product) => {
 
 
     h3.innerText = product.name;
-    h3.classList.add('swingman-card-h3');
+    h3.classList.add('rtc--swingman-card-h3');
     a.appendChild(h3);
 
     p.textContent = `${product.price} €`;
@@ -32,10 +32,10 @@ export const galleryTemplate = () => {
 
     //Creamos la lista
     const ul = document.createElement('ul');
-    ul.classList.add('swingman-gallery');
+    ul.classList.add('rtc--swingman-gallery');
 
     const h2 = document.createElement('h2');
-    h2.classList.add('swingman-gallery-h2');
+    h2.classList.add('rtc--swingman-gallery-h2');
     h2.textContent = 'The Official Swingman Shirts';
     ul.appendChild(h2);
 
