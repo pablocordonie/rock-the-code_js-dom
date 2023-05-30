@@ -218,75 +218,75 @@ const swingmanProducts = [
     },
     {
         id: 28,
-        name: 'Boston Celtics Statement Edition Swingman Jersey - Jayson Tatum - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/168652-home_default/camiseta-jayson-tatum-boston-celtics-22-23-statement-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-jayson-tatum-boston-celtics-22-23-statement-edition-swingman'
+        name: 'Cleveland Cavaliers 2003-04 Icon Edition Swingman Jersey - LeBron James - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/13181-home_default/swingman-lebron-james.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-lebron-james.html'
     },
     {
         id: 29,
-        name: 'Cleveland Cavaliers Icon Edition Swingman Jersey - Darius Garland - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/167136-home_default/darius-garland-cleveland-cavaliers-22-23-icon-edition-swingman-camiseta.jpg',
-        link: 'https://24segons.es/es/product/darius-garland-cleveland-cavaliers-22-23-icon-edition-swingman-camiseta'
+        name: 'New York Knicks 1998-99 Icon Edition Swingman Jersey - Latrell Sprewell - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/12823-home_default/swingman-nba-latrell-sprewell-new-yorks-knicks-199899.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-nba-latrell-sprewell-new-yorks-knicks-199899.html'
     },
     {
         id: 30,
-        name: 'Golden State Warriors Statement Edition Swingman Jersey - Stephen Curry - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/165206-home_default/camiseta-stephen-curry-golden-state-warriors-22-23-statement-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-stephen-curry-golden-state-warriors-22-23-statement-edition-swingman'
+        name: 'Denver Nuggets 2005-06 Icon Edition Swingman Jersey - Carmelo Anthony - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/13168-home_default/swingman-carmelo-anthony.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-carmelo-anthony.html'
     },
     {
         id: 31,
-        name: 'Los Angeles Lakers Statement Edition Swingman Jersey - LeBron James - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/165202-home_default/camiseta-lebron-james-los-angeles-lakers-22-23-statement-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-lebron-james-los-angeles-lakers-22-23-statement-edition-swingman'
+        name: 'Portland Trail Blazers 1995-96 Icon Edition Swingman Jersey - Arvydas Sabonis - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/12796-home_default/swingman-nba-arvydas-sabonis-portland-trail-blazers.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-nba-arvydas-sabonis-portland-trail-blazers.html'
     },
     {
         id: 32,
-        name: 'Miami Heat City Edition Swingman Jersey - Jimmy Butler - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/164790-home_default/jimmy-butler-miami-heat-22-23-city-edition-swingman-camiseta.jpg',
-        link: 'https://24segons.es/es/product/jimmy-butler-miami-heat-22-23-city-edition-swingman-camiseta'
+        name: 'Golden State Warriors 2009-10 Icon Edition Swingman Jersey - Stephen Curry - Kids',
+        price: 94.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/12962-home_default/swingman-nba-ninos-stephen-curry-golden-state-warriors.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-nba-ninos-stephen-curry-golden-state-warriors.html'
     },
     {
         id: 33,
-        name: 'Washington Wizards City Edition Swingman Jersey - Kyle Kuzma - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/162713-home_default/camiseta-kyle-kuzma-washington-wizards-22-23-city-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-kyle-kuzma-washington-wizards-22-23-city-edition-swingman'
+        name: 'New Orleans Hornets 2004-05 Icon Edition Swingman Jersey - Chris Paul - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/11102-home_default/swingman-nba-chris-paul-nola-.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-nba-chris-paul-nola-.html'
     },
     {
         id: 34,
-        name: 'Portland Trail Blazers City Edition Swingman Jersey - Damian Lillard - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/162703-home_default/camiseta-damian-lillard-portland-trail-blazers-22-23-city-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-damian-lillard-portland-trail-blazers-22-23-city-edition-swingman'
+        name: 'Orlando Magic 1994-95 Icon Edition Swingman Jersey - Penny Hardaway - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/9614-home_default/swingman-anfernee-penny-hardaway-orlando-magic.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-anfernee-penny-hardaway-orlando-magic.html'
     },
     {
         id: 35,
-        name: 'New Orleans Pelicans City Edition Swingman Jersey - Zion Williamson - Unisex',
-        price: 100.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/162705-home_default/camiseta-zion-williamson-new-orleans-pelicans-22-23-city-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-zion-williamson-new-orleans-pelicans-22-23-city-edition-swingman'
+        name: 'Phoenix Suns 1996-97 Icon Edition Swingman Edition - Steve Nash - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/10589-home_default/swingman-steve-nash-phoenix-suns-9697-morada.jpg',
+        link: 'https://www.madbasket.com/es/swingman-nba/swingman-steve-nash-phoenix-suns-9697-morada.html'
     },
     {
         id: 36,
-        name: 'Phoenix Suns Icon Edition Swingman Jersey - Chris Paul - Kids',
-        price: 78.00.toFixed(2),
-        seller: '24Segons',
-        image: 'https://24segons.es/168721-home_default/camiseta-junior-chris-paul-phoenix-suns-22-23-icon-edition-swingman.jpg',
-        link: 'https://24segons.es/es/product/camiseta-junior-chris-paul-phoenix-suns-22-23-icon-edition-swingman'
+        name: 'Detroit Pistons 1994-95 Icon Edition Swingman Edition - Grant Hill - Unisex',
+        price: 109.95,
+        seller: 'Madbasket',
+        image: 'https://www.madbasket.com/9612-home_default/swingman-grant-hill-detroit-pistons.jpg',
+        link: 'https://www.madbasket.com/es/detroit-pistons/swingman-grant-hill-detroit-pistons.html'
     }
 ];
 
