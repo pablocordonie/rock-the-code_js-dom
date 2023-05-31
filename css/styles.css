@@ -43,13 +43,15 @@ section {
 }
 
 .rtc--header-logo-img {
-    width: 80%;
+    width: 60%;
     height: 6rem;
     object-fit: contain;
 }
 
 .rtc--swingman-filters-menu-imgContainer {
-    padding-left: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 0rem;
 }
 
 .rtc--swingman-filters-menu-img {
