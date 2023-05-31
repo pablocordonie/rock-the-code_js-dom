@@ -1,4 +1,5 @@
 import swingmanProducts from '../../data/data.js';
+import { searchTemplate } from '../Search/search.js';
 
 const createProducts = (product) => {
     const li = document.createElement('li');
@@ -44,8 +45,13 @@ export const galleryTemplate = () => {
         ul.appendChild(createProducts(product));
     }
 
+    const section = document.createElement('section');
+    section.classList.add('rtc--swingman-products');
+    section.appendChild(ul);
+
     const main = document.querySelector('main');
-    main.appendChild(ul);
+    main.appendChild(searchTemplate());
+    main.appendChild(section);
     return main;
 
 };
