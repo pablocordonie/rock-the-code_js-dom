@@ -1,4 +1,5 @@
 import swingmanProducts from '../../data/data.js';
+import { filtersAside } from '../Aside/aside.js';
 import { searchTemplate } from '../Search/search.js';
 
 const createProducts = (product) => {
@@ -50,6 +51,8 @@ export const galleryTemplate = () => {
     section.appendChild(ul);
 
     const main = document.querySelector('main');
+
+    main.appendChild(filtersAside());
     main.appendChild(searchTemplate());
     main.appendChild(section);
     return main;

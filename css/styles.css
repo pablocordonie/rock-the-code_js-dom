@@ -48,6 +48,15 @@ section {
     object-fit: contain;
 }
 
+.rtc--swingman-filters-menu-imgContainer {
+    padding-left: 2rem;
+}
+
+.rtc--swingman-filters-menu-img {
+    width: 3rem;
+    height: 3rem;
+}
+
 .rtc--swingman-gallery {
     display: flex;
     flex-direction: column;

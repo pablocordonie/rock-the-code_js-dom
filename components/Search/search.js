@@ -1,4 +1,5 @@
 export const searchTemplate = () => {
+
     const article = document.createElement('article');
     article.classList.add('rtc--swingman-filters');
 
