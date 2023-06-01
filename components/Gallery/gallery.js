@@ -1,6 +1,5 @@
 import swingmanProducts from '../../data/data.js';
-import { filtersAside } from '../Aside/aside.js';
-import { searchTemplate } from '../Search/search.js';
+// import { searchTemplate } from '../Search/search.js';
 
 const createProducts = (product) => {
     const li = document.createElement('li');
@@ -9,7 +8,6 @@ const createProducts = (product) => {
     const h3 = document.createElement('h3');
     const p = document.createElement('p');
 
-    //Completamos la información de los productos
     li.classList.add('rtc--swingman-item');
     a.href = product.link;
     a.classList.add('rtc--swingman-card');
@@ -18,7 +16,6 @@ const createProducts = (product) => {
     img.alt = product.name;
     li.appendChild(a);
     a.appendChild(img);
-
 
     h3.innerText = product.name;
     h3.classList.add('rtc--swingman-card-h3');
@@ -32,16 +29,9 @@ const createProducts = (product) => {
 
 export const galleryTemplate = () => {
 
-    //Creamos la lista
     const ul = document.createElement('ul');
     ul.classList.add('rtc--swingman-gallery');
 
-    const h2 = document.createElement('h2');
-    h2.classList.add('rtc--swingman-gallery-h2');
-    h2.textContent = 'The Official Swingman Shirts';
-    ul.appendChild(h2);
-
-    //Almacenamos los productos;
     for (const product of swingmanProducts) {
         ul.appendChild(createProducts(product));
     }
@@ -52,8 +42,7 @@ export const galleryTemplate = () => {
 
     const main = document.querySelector('main');
 
-    main.appendChild(filtersAside());
-    main.appendChild(searchTemplate());
+    // main.appendChild(searchTemplate());
     main.appendChild(section);
     return main;
 

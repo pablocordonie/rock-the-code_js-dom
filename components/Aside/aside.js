@@ -1,15 +1,21 @@
 export const filtersAside = () => {
     const aside = document.createElement('aside');
 
-    const imgWrapper = document.createElement('div');
-    imgWrapper.classList.add('rtc--swingman-filters-menu-imgContainer');
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('rtc--swingman-filters-menu');
 
     const filtersImg = document.createElement('img');
     filtersImg.src = './assets/menu.png';
     filtersImg.alt = 'Menú de filtros de búsqueda';
     filtersImg.classList.add('rtc--swingman-filters-menu-img');
 
-    imgWrapper.appendChild(filtersImg);
-    aside.appendChild(imgWrapper);
+    const nbaImg = document.createElement('img');
+    nbaImg.src = './assets/logonba.png';
+    nbaImg.alt = 'Logo de la NBA';
+    nbaImg.classList.add('rtc--swingman-filters-menu-nba_logo');
+
+    wrapper.appendChild(filtersImg);
+    wrapper.appendChild(nbaImg);
+    aside.appendChild(wrapper);
     return aside;
 }
