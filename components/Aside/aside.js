@@ -1,3 +1,5 @@
+let abierto = false;
+
 export const filtersAside = () => {
     const aside = document.createElement('aside');
 
@@ -18,4 +20,22 @@ export const filtersAside = () => {
     wrapper.appendChild(nbaImg);
     aside.appendChild(wrapper);
     return aside;
+}
+
+export const filtersMenu = () => {
+    const menu = document.querySelector(".rtc--swingman-filters-menu");
+
+    menu.addEventListener("click", toggleMenu);
+}
+
+const toggleMenu = () => {
+    const menu = document.querySelector(".rtc--swingman-filters-menu");
+
+    if (abierto) {
+        menu.style.height = '3rem';
+        abierto = false;
+    } else {
+        menu.style.height = '90%';
+        abierto = true;
+    }
 }

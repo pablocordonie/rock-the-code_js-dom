@@ -1,4 +1,4 @@
-import { filtersAside } from '../Aside/aside.js';
+import { filtersAside, filtersMenu } from '../Aside/aside.js';
 
 export const headerTemplate = () => {
     const header = document.querySelector('header');
@@ -12,5 +12,6 @@ export const headerTemplate = () => {
     div.appendChild(h1);
     header.appendChild(div);
     header.appendChild(filtersAside());
+    filtersMenu();
     return header;
 }
