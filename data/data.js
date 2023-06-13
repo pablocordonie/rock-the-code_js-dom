@@ -145,76 +145,76 @@ const swingmanProducts = [
     },
     {
         id: 19,
-        name: 'New York Knicks Nike City Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22548-home_default/julius-randle-new-york-knicks-city-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/julius-randle-new-york-knicks-city-edition-swingman-jersey-22-23.html'
+        name: 'Philadelphia 76ers Nike Icon Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/168629-home_default/james-harden-philadelphia-76ers-22-23-icon-edition-swingman-camiseta.jpg',
+        link: 'https://24segons.es/es/product/james-harden-philadelphia-76ers-22-23-icon-edition-swingman-camiseta'
     },
     {
         id: 20,
-        name: 'Los Angeles Clippers Nike Icon Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22627-home_default/paul-george-los-angeles-clippers-icon-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/paul-george-los-angeles-clippers-icon-edition-swingman-jersey-22-23.html'
+        name: 'Golden State Warriors Nike Alternative Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/123912-home_default/camiseta-stephen-curry-warriors-swingman-alternative.jpg',
+        link: 'https://24segons.es/es/product/camiseta-stephen-curry-warriors-swingman-alternative'
     },
     {
         id: 21,
-        name: 'Utah Jazz Jordan Statement Edition - Kids',
-        price: 74.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22169-home_default/jordan-clarkson-utah-jazz-statement-edition-swingman-jersey-22-23-junior.jpg',
-        link: 'https://basketworld.com/jordan-clarkson-utah-jazz-statement-edition-swingman-jersey-22-23-junior.html'
+        name: 'New York Knicks Nike Icon Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/122569-home_default/camiseta-swingman-knicks-rj-barrett.jpg',
+        link: 'https://24segons.es/es/product/camiseta-swingman-knicks-rj-barrett'
     },
     {
         id: 22,
-        name: 'Miami Heat Nike Classic Edition - Kids',
-        price: 74.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22129-home_default/tyler-herro-miami-heat-classic-edition-swingman-jersey-22-23-junior.jpg',
-        link: 'https://basketworld.com/tyler-herro-miami-heat-classic-edition-swingman-jersey-22-23-junior.html'
+        name: 'Los Angeles Clippers Nike Association Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/129011-home_default/swingman-kawhi-leonard-clippers-association.jpg',
+        link: 'https://24segons.es/es/product/swingman-kawhi-leonard-clippers-association'
     },
     {
         id: 23,
-        name: 'Charlotte Hornets Jordan Icon Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/21062-home_default/lamelo-ball-charlotte-hornets-icon-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/lamelo-ball-charlotte-hornets-icon-edition-swingman-jersey-22-23.html'
+        name: 'Minnesota Timberwolves Nike Icon Editon - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/129073-home_default/swingman-anthony-towns-timberwolves-icon.jpg',
+        link: 'https://24segons.es/es/product/swingman-anthony-towns-timberwolves-icon'
     },
     {
         id: 24,
-        name: 'Los Angeles Lakers Nike Association Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22291-home_default/anthony-davis-los-angeles-lakers-association-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/anthony-davis-los-angeles-lakers-association-edition-swingman-jersey-22-23.html'
+        name: 'Phoenix Suns Nike Icon Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/131391-home_default/devin-booker-phoenix-suns-20-21-icon-edition-swingman-camiseta.jpg',
+        link: 'https://24segons.es/es/product/devin-booker-phoenix-suns-20-21-icon-edition-swingman-camiseta'
     },
     {
         id: 25,
-        name: 'Chicago Bulls Nike Icon Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/21856-home_default/alex-caruso-chicago-bulls-icon-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/alex-caruso-chicago-bulls-icon-edition-swingman-jersey-22-23.html'
+        name: 'Denver Nuggets Nike Icon Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/131397-home_default/nikola-jokic-denver-nuggets-20-21-icon-swingman.jpg',
+        link: 'https://24segons.es/es/product/nikola-jokic-denver-nuggets-20-21-icon-swingman'
     },
     {
         id: 26,
-        name: 'Philadelphia 76ers Nike Association Edition - Kids',
-        price: 74.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/21964-home_default/james-harden-philadelphia-76ers-association-edition-swingman-jersey-22-23-junior.jpg',
-        link: 'https://basketworld.com/james-harden-philadelphia-76ers-association-edition-swingman-jersey-22-23-junior.html'
+        name: 'Dallas Mavericks Nike Association Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/134486-home_default/hombre-camiseta-luka-doncic-dallas-mavericks-association-edition.jpg',
+        link: 'https://24segons.es/es/product/hombre-camiseta-luka-doncic-dallas-mavericks-association-edition'
     },
 
     {
         id: 27,
-        name: 'Milwaukee Bucks Nike Icon Edition - Unisex',
-        price: 94.90.toFixed(2),
-        seller: 'Basket World',
-        image: 'https://basketworld.com/22287-home_default/giannis-antetokounmpo-milwaukee-bucks-icon-edition-swingman-jersey-22-23.jpg',
-        link: 'https://basketworld.com/giannis-antetokounmpo-milwaukee-bucks-icon-edition-swingman-jersey-22-23.html'
+        name: 'Milwaukee Bucks Nike Statement Edition - Unisex',
+        price: 100.00.toFixed(2),
+        seller: '24Segons',
+        image: 'https://24segons.es/130973-home_default/swingman-giannis-milwaukee-bucks-statement-2021.jpg',
+        link: 'https://24segons.es/es/product/swingman-giannis-milwaukee-bucks-statement-2021'
     },
     {
         id: 28,
