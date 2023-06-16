@@ -1,3 +1,5 @@
+import sellersFilterTemplate from '../Filters/sellers.js';
+
 let abierto = false;
 
 export const filtersAside = () => {
@@ -37,5 +39,6 @@ const toggleMenu = () => {
     } else {
         menu.style.height = '90%';
         abierto = true;
+        sellersFilterTemplate();
     }
 }
