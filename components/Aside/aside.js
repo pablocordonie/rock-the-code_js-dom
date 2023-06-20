@@ -1,4 +1,5 @@
 import sellersFilterTemplate from '../Filters/sellers.js';
+import priceFilterTemplate from '../Filters/price.js';
 
 let abierto = false;
 
@@ -37,9 +38,11 @@ const toggleMenu = () => {
         menu.style.height = '3rem';
         abierto = false;
         menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
     } else {
         menu.style.height = '90%';
         abierto = true;
         menu.appendChild(sellersFilterTemplate());
+        menu.appendChild(priceFilterTemplate());
     }
 }

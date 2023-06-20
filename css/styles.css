@@ -70,9 +70,23 @@ section {
     left: 50%;
 }
 
-/*.rtc--swingman-filters-sellers_div {
-    PENDING!
-}*/
+.rtc--swingman-filters-sellers_div {
+    display: flex;
+    gap: 1rem;
+}
+
+.rtc--swingman-filters-price_div {
+    display: flex;
+    gap: 1rem;
+}
+
+.rtc--swingman-filters-price_input {
+    width: 5rem;
+}
+
+.rtc--swingman-filters-price_search {
+    width: 6rem;
+}
 
 .rtc--swingman-products {
     margin: 2.5rem 0;

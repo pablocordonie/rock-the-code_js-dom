@@ -42,7 +42,6 @@ export const galleryTemplate = () => {
 
     const main = document.querySelector('main');
 
-    // main.appendChild(searchTemplate());
     main.appendChild(section);
     return main;
 
