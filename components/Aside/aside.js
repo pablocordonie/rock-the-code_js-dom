@@ -36,9 +36,10 @@ const toggleMenu = () => {
     if (abierto) {
         menu.style.height = '3rem';
         abierto = false;
+        menu.removeChild(menu.lastChild);
     } else {
         menu.style.height = '90%';
         abierto = true;
-        sellersFilterTemplate();
+        menu.appendChild(sellersFilterTemplate());
     }
 }

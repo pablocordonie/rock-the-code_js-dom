@@ -4,9 +4,10 @@ const sellersFilterTemplate = () => {
 
     const sellersContainer = document.createElement('div');
     sellersContainer.classList.add('rtc--swingman-filters-sellers_div');
+    const sellers_title = 'vendedores';
 
     const label = document.createElement('label');
-    label.textContent = 'vendedores';
+    label.innerText = `${sellers_title.toUpperCase()}`;
     label.setAttribute('for', 'sellers_select');
     sellersContainer.appendChild(label);
 
@@ -15,20 +16,17 @@ const sellersFilterTemplate = () => {
     select.setAttribute('name', 'sellers');
     select.setAttribute('id', 'sellers_select');
 
-    const sellers = swingmanProducts.map((product) => {
-        // CONDICIÓN PARA CONSEGUIR EL PRIMER SELLER DE CADA SET DE OBJETOS CON EL MISMO SELLER
-        return;
-    });
-    console.log(sellers);
+    const mappedSellers = swingmanProducts.map((product) => product.seller);
 
-    const sellersOptions = sellers.map((seller) => {
-        const option = document.createElement('option');
-        option.setAttribute('value', seller);
-        option.textContent = seller;
-    });
-    select.appendChild(sellersOptions);
+    const sellers = [... new Set(mappedSellers)];
 
-    sellersContainer.appendChild(select);
+    const sellerOptionTemplate = (seller) => `<option value="${seller.toLowerCase()}">${seller}</option>`;
+
+    const sellerOption = sellers.map(seller => sellerOptionTemplate(seller));
+
+    select.innerHTML += sellerOption.join('');
+
+    sellersContainer.append(select);
 
     return sellersContainer;
 }
