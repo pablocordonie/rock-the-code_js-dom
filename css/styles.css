@@ -86,6 +86,12 @@ section {
 
 .rtc--swingman-filters-price_search {
     width: 6rem;
+    text-align: center;
+}
+
+.rtc--swingman-filters-cleaner_button {
+    width: 8rem;
+    text-align: center;
 }
 
 .rtc--swingman-products {

@@ -1,5 +1,6 @@
 import sellersFilterTemplate from '../Filters/sellers.js';
 import priceFilterTemplate from '../Filters/price.js';
+import cleanerTemplate from '../Filters/cleaner.js';
 
 let abierto = false;
 
@@ -39,10 +40,12 @@ const toggleMenu = () => {
         abierto = false;
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
     } else {
-        menu.style.height = '90%';
+        menu.style.height = '80%';
         abierto = true;
         menu.appendChild(sellersFilterTemplate());
         menu.appendChild(priceFilterTemplate());
+        menu.appendChild(cleanerTemplate());
     }
 }
