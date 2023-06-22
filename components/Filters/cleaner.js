@@ -1,5 +1,5 @@
 
-const cleanerTemplate = () => {
+const createFiltersCleaner = () => {
 
     const cleanerContainer = document.createElement('div');
     cleanerContainer.classList.add('rtc--swingman-filters-cleaner_div');
@@ -14,4 +14,4 @@ const cleanerTemplate = () => {
     return cleanerContainer;
 }
 
-export default cleanerTemplate;
+export default createFiltersCleaner;

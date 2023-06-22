@@ -1,6 +1,6 @@
 import swingmanProducts from '../../data/data.js';
 
-const priceFilterTemplate = () => {
+const createPriceFilter = () => {
 
     const priceContainer = document.createElement('div');
     priceContainer.classList.add('rtc--swingman-filters-price_div');
@@ -31,4 +31,4 @@ const priceFilterTemplate = () => {
     return priceContainer;
 }
 
-export default priceFilterTemplate;
+export default createPriceFilter;

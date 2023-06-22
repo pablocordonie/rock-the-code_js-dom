@@ -1,5 +1,7 @@
-import { headerTemplate } from './components/Header/header.js';
-import { galleryTemplate } from './components/Gallery/gallery.js';
+import createHeader from './components/Header/header.js';
+import createGallery from './components/Gallery/gallery.js';
+import createFooter from './components/Footer/footer.js';
 
-headerTemplate();
-galleryTemplate();
+createHeader();
+createGallery();
+createFooter();

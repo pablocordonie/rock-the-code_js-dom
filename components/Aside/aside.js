@@ -1,10 +1,10 @@
-import sellersFilterTemplate from '../Filters/sellers.js';
-import priceFilterTemplate from '../Filters/price.js';
-import cleanerTemplate from '../Filters/cleaner.js';
+import createSellersFilter from '../Filters/sellers.js';
+import createPriceFilter from '../Filters/price.js';
+import createFiltersCleaner from '../Filters/cleaner.js';
 
 let abierto = false;
 
-export const filtersAside = () => {
+export const createFiltersAside = () => {
     const aside = document.createElement('aside');
 
     const wrapper = document.createElement('div');
@@ -44,8 +44,8 @@ const toggleMenu = () => {
     } else {
         menu.style.height = '80%';
         abierto = true;
-        menu.appendChild(sellersFilterTemplate());
-        menu.appendChild(priceFilterTemplate());
-        menu.appendChild(cleanerTemplate());
+        menu.appendChild(createSellersFilter());
+        menu.appendChild(createPriceFilter());
+        menu.appendChild(createFiltersCleaner());
     }
 }
