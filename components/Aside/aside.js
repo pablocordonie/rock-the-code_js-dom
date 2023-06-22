@@ -27,7 +27,7 @@ export const createFiltersAside = () => {
 }
 
 export const filtersMenu = () => {
-    const menu = document.querySelector(".rtc--swingman-filters-menu");
+    const menu = document.querySelector(".rtc--swingman-filters-menu-img");
 
     menu.addEventListener("click", toggleMenu);
 }

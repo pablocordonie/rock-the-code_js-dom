@@ -7,6 +7,7 @@ const createSellersFilter = () => {
     const sellers_title = 'vendedores';
 
     const label = document.createElement('label');
+    label.classList.add('rtc--swingman-filters-sellers_label');
     label.innerText = `${sellers_title.toUpperCase()}`;
     label.setAttribute('for', 'sellers_select');
     sellersContainer.appendChild(label);

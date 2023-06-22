@@ -7,6 +7,7 @@ const createPriceFilter = () => {
     const price_title = 'precio';
 
     const label = document.createElement('label');
+    label.classList.add('rtc--swingman-filters-price_label');
     label.innerText = `${price_title.toUpperCase()}`;
     label.setAttribute('for', 'price_input');
     priceContainer.appendChild(label);
