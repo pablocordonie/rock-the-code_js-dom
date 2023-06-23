@@ -1,7 +1,13 @@
-const socialWebs = ['facebook', 'twitter', 'instagram'];
+const socialWebs = [
+    { web: 'facebook', image: './assets/facebook.png' },
+    { web: 'twitter', image: './assets/twitter.png' },
+    { web: 'instagram', image: './assets/instagram.png' }
+];
 
 const socialWebTemplate = (socialWeb) => `
-    <li class="rtc--swingman-footer-social_web-${socialWeb}">${socialWeb}</li>
+    <li class="rtc--swingman-footer-social_web-${socialWeb.web}">
+        <img class="rtc--swingman-footer-social_web-img" src="${socialWeb.image}" alt="${socialWeb.web}">
+    </li>
 `;
 
 const createFooter = () => {

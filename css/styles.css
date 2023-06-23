@@ -11,6 +11,7 @@
 
 :root {
     --background: #ffffff;
+    --paragraph: #000000;
     --backgroundOpacity: #ffffff00;
     --primary: #002b5c;
     --secondary: #c9082c;
@@ -33,6 +34,16 @@ p {
 
 section {
     background-color: var(--background);
+}
+
+footer {
+    background-color: var(--background);
+    box-shadow: 0 0 1.5rem -0.25rem var(--primary);
+}
+
+footer p {
+    color: var(--paragraph);
+    font-size: 0.75rem;
 }
 
 .rtc--header-logo {
@@ -135,7 +146,7 @@ section {
 }
 
 .rtc--swingman-products {
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 5rem 0;
 }
 
 .rtc--swingman-gallery {
@@ -163,7 +174,7 @@ section {
 
 .rtc--swingman-card-img {
     padding-top: 1rem;
-    height: 17.5rem;
+    height: 17rem;
     width: 75%;
 }
 
@@ -177,14 +188,44 @@ section {
     text-decoration: underline;
 }
 
+.rtc--swingman-footer-social_webs {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 1.5rem 1rem 3rem 0;
+}
+
+.rtc--swingman-footer-social_web-img {
+    width: 2rem;
+    height: 2rem;
+}
+
 @media screen and (max-width: 360px) {
 
-    .rtc--swingman-filters-menu-img {
-        width: 2rem;
-        height: 2rem;
+    .rtc--swingman-card-img {
+        height: 16rem;
     }
 
     .rtc--swingman-card-h3, p {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
+}
+
+@media screen and (max-width: 290px) {
+
+    .rtc--header-logo-h1 {
+        font-size: 2rem;
+        width: 14rem;
+        height: 2rem;
+    }
+
+    .rtc--swingman-card-img {
+        width: 80%;
+        height: 12rem;
+    }
+
+    .rtc--swingman-card-h3, p {
+        font-size: 0.85rem;
+    }
+
 }
