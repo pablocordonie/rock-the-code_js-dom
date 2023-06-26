@@ -1,4 +1,3 @@
-
 const createFiltersCleaner = () => {
 
     const cleanerContainer = document.createElement('div');

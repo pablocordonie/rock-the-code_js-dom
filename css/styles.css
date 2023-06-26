@@ -149,6 +149,11 @@ footer p {
     margin: 2.5rem 0 5rem 0;
 }
 
+.rtc--swingman-products_notfound {
+    padding: 18rem 0;
+    text-align: center;
+}
+
 .rtc--swingman-gallery {
     display: flex;
     flex-direction: column;

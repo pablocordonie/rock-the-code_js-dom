@@ -1,7 +1,8 @@
+import swingmanProducts from './data/data.js';
 import createHeader from './components/Header/header.js';
-import createGallery from './components/Gallery/gallery.js';
+import { initGallery } from './components/Gallery/gallery.js';
 import createFooter from './components/Footer/footer.js';
 
 createHeader();
-createGallery();
+initGallery(swingmanProducts);
 createFooter();

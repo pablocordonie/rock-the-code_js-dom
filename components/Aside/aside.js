@@ -1,4 +1,4 @@
-import createSellersFilter from '../Filters/sellers.js';
+import { createSellersFilter } from '../Filters/sellers.js';
 import createPriceFilter from '../Filters/price.js';
 import createFiltersCleaner from '../Filters/cleaner.js';
 
@@ -33,7 +33,7 @@ export const filtersMenu = () => {
 }
 
 const toggleMenu = () => {
-    const menu = document.querySelector(".rtc--swingman-filters-menu");
+    const menu = document.querySelector('.rtc--swingman-filters-menu');
 
     if (abierto) {
         menu.style.height = '3rem';

@@ -1,6 +1,7 @@
 import swingmanProducts from '../../data/data.js';
+import { initGallery } from '../Gallery/gallery.js';
 
-const createSellersFilter = () => {
+export const createSellersFilter = () => {
 
     const sellersContainer = document.createElement('div');
     sellersContainer.classList.add('rtc--swingman-filters-sellers_div');
@@ -17,19 +18,57 @@ const createSellersFilter = () => {
     select.setAttribute('name', 'sellers');
     select.setAttribute('id', 'sellers_select');
 
-    const mappedSellers = swingmanProducts.map((product) => product.seller);
+    const emptyOption = document.createElement('option');
+    emptyOption.setAttribute('value', '');
+    emptyOption.classList.add('rtc--swingman-filters-sellers-empty_option');
+    select.appendChild(emptyOption);
 
-    const sellers = [... new Set(mappedSellers)];
+    const sellers = [];
 
-    const sellerOptionTemplate = (seller) => `<option value="${seller.toLowerCase()}">${seller}</option>`;
+    swingmanProducts.forEach((product) => {
+        if (!sellers.includes(product.seller)) {
+            sellers.push(product.seller);
+        }
+    });
 
-    const sellerOption = sellers.map(seller => sellerOptionTemplate(seller));
+    const sellerOptionTemplate = (seller, label) => `<option value="${seller}" class="${label}">${seller}</option>`;
+
+    const sellerOption = sellers.map(seller => sellerOptionTemplate(seller, `rtc--swingman-filters-sellers-${seller}_option`));
 
     select.innerHTML += sellerOption.join('');
+
+    select.addEventListener('change', (event) => toFilterSellers(event));
 
     sellersContainer.append(select);
 
     return sellersContainer;
 }
 
-export default createSellersFilter;
+const toFilterSellers = (event) => {
+
+    let FILTERED = [];
+
+    const menu = document.querySelector('.rtc--swingman-filters-menu')
+
+    if (event.target.selectedOptions[0]) {
+
+        if (!FILTERED.some((product) => product.seller === event.target.value)) {
+
+            FILTERED = [
+                ...FILTERED,
+                ...swingmanProducts.filter((product) => product.seller === event.target.value),
+            ];
+
+            initGallery(FILTERED);
+
+        }
+    } else {
+
+        FILTERED = FILTERED.filter(
+            (product) => product.seller !== event.target.value
+        );
+
+        initGallery(FILTERED);
+    }
+
+};

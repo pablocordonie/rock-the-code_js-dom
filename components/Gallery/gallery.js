@@ -1,4 +1,3 @@
-import swingmanProducts from '../../data/data.js';
 
 const productTemplate = (product) => `
     <li class="rtc--swingman-item">
@@ -10,12 +9,12 @@ const productTemplate = (product) => `
     </li>
     `;
 
-export const createGallery = () => {
+const createGallery = (products) => {
 
     const productsList = document.createElement('ul');
     productsList.classList.add('rtc--swingman-gallery');
 
-    for (const product of swingmanProducts) {
+    for (const product of products) {
         productsList.innerHTML += productTemplate(product);
     }
 
@@ -30,4 +29,18 @@ export const createGallery = () => {
 
 };
 
-export default createGallery;
+export const initGallery = (products) => {
+
+    const main = document.querySelector('main');
+
+    main.innerHTML = '';
+
+    if (products.length === 0) {
+        const h2 = document.createElement('h2');
+        h2.textContent = 'No se han encontrado los artículos que deseabas';
+        h2.className = 'rtc--swingman-products_notfound';
+        main.appendChild(h2);
+    } else {
+        createGallery(products);
+    }
+};

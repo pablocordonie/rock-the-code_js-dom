@@ -1,5 +1,3 @@
-import swingmanProducts from '../../data/data.js';
-
 const createPriceFilter = () => {
 
     const priceContainer = document.createElement('div');
@@ -17,9 +15,6 @@ const createPriceFilter = () => {
     input.setAttribute('type', 'number');
     input.setAttribute('name', 'price');
     input.setAttribute('id', 'price_input');
-    input.setAttribute('minlength', '1');
-    input.setAttribute('maxlength', '4');
-    input.setAttribute('size', '5');
     priceContainer.appendChild(input);
 
     const button = document.createElement('button');
