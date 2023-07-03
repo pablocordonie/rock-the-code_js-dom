@@ -1,8 +1,4 @@
-import { createSellersFilter } from '../Filters/sellers.js';
-import createPriceFilter from '../Filters/price.js';
-import createFiltersCleaner from '../Filters/cleaner.js';
-
-let abierto = false;
+import { toggleMenu } from '../../utils/Toggle/toggle.js';
 
 export const createFiltersAside = () => {
     const aside = document.createElement('aside');
@@ -27,25 +23,7 @@ export const createFiltersAside = () => {
 }
 
 export const filtersMenu = () => {
-    const menu = document.querySelector(".rtc--swingman-filters-menu-img");
+    const menu = document.querySelector('.rtc--swingman-filters-menu-img');
 
-    menu.addEventListener("click", toggleMenu);
-}
-
-const toggleMenu = () => {
-    const menu = document.querySelector('.rtc--swingman-filters-menu');
-
-    if (abierto) {
-        menu.style.height = '3rem';
-        abierto = false;
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-    } else {
-        menu.style.height = '80%';
-        abierto = true;
-        menu.appendChild(createSellersFilter());
-        menu.appendChild(createPriceFilter());
-        menu.appendChild(createFiltersCleaner());
-    }
+    menu.addEventListener('click', toggleMenu);
 }

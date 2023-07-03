@@ -1,4 +1,4 @@
-const createPriceFilter = () => {
+export const createPriceFilter = () => {
 
     const priceContainer = document.createElement('div');
     priceContainer.classList.add('rtc--swingman-filters-price_div');
@@ -25,6 +25,4 @@ const createPriceFilter = () => {
     priceContainer.appendChild(button);
 
     return priceContainer;
-}
-
-export default createPriceFilter;
+};

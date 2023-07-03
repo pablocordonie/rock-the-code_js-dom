@@ -1,4 +1,6 @@
-const createFiltersCleaner = () => {
+import { toggleButton } from '../../utils/Toggle/toggle.js';
+
+export const createFiltersCleaner = () => {
 
     const cleanerContainer = document.createElement('div');
     cleanerContainer.classList.add('rtc--swingman-filters-cleaner_div');
@@ -13,4 +15,8 @@ const createFiltersCleaner = () => {
     return cleanerContainer;
 }
 
-export default createFiltersCleaner;
+export const toCleanFilters = () => {
+    const button = document.querySelector('.rtc--swingman-filters-cleaner_button');
+
+    button.addEventListener('click', toggleButton);
+};

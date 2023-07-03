@@ -48,8 +48,6 @@ const toFilterSellers = (event) => {
 
     let FILTERED = [];
 
-    const menu = document.querySelector('.rtc--swingman-filters-menu')
-
     if (event.target.selectedOptions[0]) {
 
         if (!FILTERED.some((product) => product.seller === event.target.value)) {
