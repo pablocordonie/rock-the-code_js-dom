@@ -48,7 +48,11 @@ const toFilterSellers = (event) => {
 
     let FILTERED = [];
 
-    if (event.target.selectedOptions[0]) {
+    if (event.target.selectedOptions[0].value === '') {
+
+        initGallery(swingmanProducts);
+
+    } else {
 
         if (!FILTERED.some((product) => product.seller === event.target.value)) {
 
@@ -60,13 +64,5 @@ const toFilterSellers = (event) => {
             initGallery(FILTERED);
 
         }
-    } else {
-
-        FILTERED = FILTERED.filter(
-            (product) => product.seller !== event.target.value
-        );
-
-        initGallery(FILTERED);
     }
-
 };
