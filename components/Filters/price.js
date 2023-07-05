@@ -15,6 +15,9 @@ export const createPriceFilter = () => {
     input.setAttribute('type', 'number');
     input.setAttribute('name', 'price');
     input.setAttribute('id', 'price_input');
+    input.setAttribute('min', 0);
+    input.setAttribute('max', 999);
+    input.addEventListener('change', handleInput);
     priceContainer.appendChild(input);
 
     const button = document.createElement('button');
@@ -22,7 +25,24 @@ export const createPriceFilter = () => {
     button.classList.add('rtc--swingman-filters-price_search');
     button.setAttribute('type', 'button');
     button.innerText = `${search.toUpperCase()}`;
+
+    button.addEventListener('click', handleSearch);
     priceContainer.appendChild(button);
 
     return priceContainer;
 };
+
+const handleInput = (event) => {
+    let introducedNumber = event.target.value;
+
+    if (introducedNumber.length >= 0 && introducedNumber.length <= 3) {
+        return introducedNumber;
+    } else {
+        event.target.valueAsNumber = '';
+        return event.target.valueAsNumber;
+    }
+};
+
+const handleSearch = (event) => {
+    // PENDING
+}
