@@ -1,5 +1,5 @@
 import swingmanProducts from '../../data/data.js';
-import { initGallery } from '../Gallery/gallery.js';
+import { toFilterSellers } from '../../utils/Filtering/toFilter.js';
 
 export const createSellersFilter = () => {
 
@@ -37,32 +37,9 @@ export const createSellersFilter = () => {
 
     select.innerHTML += sellerOption.join('');
 
-    select.addEventListener('change', (event) => toFilterSellers(event));
+    select.addEventListener('change', toFilterSellers);
 
     sellersContainer.append(select);
 
     return sellersContainer;
 }
-
-const toFilterSellers = (event) => {
-
-    let FILTERED = [];
-
-    if (event.target.selectedOptions[0].value === '') {
-
-        initGallery(swingmanProducts);
-
-    } else {
-
-        if (!FILTERED.some((product) => product.seller === event.target.value)) {
-
-            FILTERED = [
-                ...FILTERED,
-                ...swingmanProducts.filter((product) => product.seller === event.target.value),
-            ];
-
-            initGallery(FILTERED);
-
-        }
-    }
-};

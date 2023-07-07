@@ -126,6 +126,7 @@ footer p {
 .rtc--swingman-filters-price_input {
     width: 6rem;
     height: 2rem;
+    text-align: center;
 }
 
 .rtc--swingman-filters-price_search {
