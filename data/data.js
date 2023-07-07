@@ -50,7 +50,7 @@ const swingmanProducts = [
     {
         id: 7,
         name: 'Sacramento Kings Nike Icon Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: 'NBA Store',
         image: 'https://images.footballfanatics.com/sacramento-kings/sacramento-kings-nike-icon-edition-swingman-jersey-purple-domantas-sabonis-mens_ss4_p-13317173+u-inbyx7mujbsb7fs8c8qr+v-93849046473a472da1aa4f2b0027c0ee.jpg?_hv=2&w=340',
         link: 'https://www.nbastore.eu/es/sacramento-kings/sacramento-kings-nike-icon-edition-swingman-jersey-purple-domantas-sabonis-mens/t-14813160+p-56362545180181+z-9-2881658520?_ref=p-DLP%3Am-GRID%3Ai-r7c2%3Apo-23'
@@ -146,7 +146,7 @@ const swingmanProducts = [
     {
         id: 19,
         name: 'Philadelphia 76ers Nike Icon Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/168629-home_default/james-harden-philadelphia-76ers-22-23-icon-edition-swingman-camiseta.jpg',
         link: 'https://24segons.es/es/product/james-harden-philadelphia-76ers-22-23-icon-edition-swingman-camiseta'
@@ -154,7 +154,7 @@ const swingmanProducts = [
     {
         id: 20,
         name: 'Golden State Warriors Nike Alternative Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/123912-home_default/camiseta-stephen-curry-warriors-swingman-alternative.jpg',
         link: 'https://24segons.es/es/product/camiseta-stephen-curry-warriors-swingman-alternative'
@@ -162,7 +162,7 @@ const swingmanProducts = [
     {
         id: 21,
         name: 'New York Knicks Nike Icon Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/122569-home_default/camiseta-swingman-knicks-rj-barrett.jpg',
         link: 'https://24segons.es/es/product/camiseta-swingman-knicks-rj-barrett'
@@ -170,7 +170,7 @@ const swingmanProducts = [
     {
         id: 22,
         name: 'Los Angeles Clippers Nike Association Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/129011-home_default/swingman-kawhi-leonard-clippers-association.jpg',
         link: 'https://24segons.es/es/product/swingman-kawhi-leonard-clippers-association'
@@ -178,7 +178,7 @@ const swingmanProducts = [
     {
         id: 23,
         name: 'Minnesota Timberwolves Nike Icon Editon - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/129073-home_default/swingman-anthony-towns-timberwolves-icon.jpg',
         link: 'https://24segons.es/es/product/swingman-anthony-towns-timberwolves-icon'
@@ -186,7 +186,7 @@ const swingmanProducts = [
     {
         id: 24,
         name: 'Phoenix Suns Nike Icon Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/131391-home_default/devin-booker-phoenix-suns-20-21-icon-edition-swingman-camiseta.jpg',
         link: 'https://24segons.es/es/product/devin-booker-phoenix-suns-20-21-icon-edition-swingman-camiseta'
@@ -194,7 +194,7 @@ const swingmanProducts = [
     {
         id: 25,
         name: 'Denver Nuggets Nike Icon Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/131397-home_default/nikola-jokic-denver-nuggets-20-21-icon-swingman.jpg',
         link: 'https://24segons.es/es/product/nikola-jokic-denver-nuggets-20-21-icon-swingman'
@@ -202,7 +202,7 @@ const swingmanProducts = [
     {
         id: 26,
         name: 'Dallas Mavericks Nike Association Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/134486-home_default/hombre-camiseta-luka-doncic-dallas-mavericks-association-edition.jpg',
         link: 'https://24segons.es/es/product/hombre-camiseta-luka-doncic-dallas-mavericks-association-edition'
@@ -211,7 +211,7 @@ const swingmanProducts = [
     {
         id: 27,
         name: 'Milwaukee Bucks Nike Statement Edition - Unisex',
-        price: 100.00.toFixed(2),
+        price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/130973-home_default/swingman-giannis-milwaukee-bucks-statement-2021.jpg',
         link: 'https://24segons.es/es/product/swingman-giannis-milwaukee-bucks-statement-2021'

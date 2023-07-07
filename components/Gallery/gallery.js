@@ -35,7 +35,7 @@ export const initGallery = (products) => {
 
     main.innerHTML = '';
 
-    if (products.length === 0) {
+    if (products.length === 0 || products.find((product) => product.name === undefined)) {
         const h2 = document.createElement('h2');
         h2.textContent = 'No se han encontrado los artículos que deseabas';
         h2.className = 'rtc--swingman-products_notfound';

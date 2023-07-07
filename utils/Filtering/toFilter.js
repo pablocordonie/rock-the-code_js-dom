@@ -13,11 +13,28 @@ export const toFilterSellers = (event) => {
 
     } else {
 
-        filteredItems = [
-            ...swingmanProducts.filter((product) => product.seller === event.target.value),
+        filteredItems = [...swingmanProducts.filter((product) => product.seller === event.target.value),
         ];
 
         initGallery(filteredItems);
 
     }
+};
+
+export const toFilterPrice = (event) => {
+
+    const clickedButton = event.type;
+    const input = document.querySelector('.rtc--swingman-filters-price_input');
+
+    if (clickedButton === 'click') {
+
+        const filteredProductsByPrice = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
+
+        filteredItems = [
+            ...filteredProductsByPrice
+        ];
+
+    }
+
+    initGallery(filteredItems);
 };

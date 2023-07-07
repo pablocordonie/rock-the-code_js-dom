@@ -1,3 +1,5 @@
+import { toFilterPrice } from '../../utils/Filtering/toFilter.js';
+
 export const createPriceFilter = () => {
 
     const priceContainer = document.createElement('div');
@@ -26,7 +28,7 @@ export const createPriceFilter = () => {
     button.setAttribute('type', 'button');
     button.innerText = `${search.toUpperCase()}`;
 
-    button.addEventListener('click', handleSearch);
+    button.addEventListener('click', toFilterPrice);
     priceContainer.appendChild(button);
 
     return priceContainer;
@@ -42,7 +44,3 @@ const handleInput = (event) => {
         return event.target.valueAsNumber;
     }
 };
-
-const handleSearch = (event) => {
-    // PENDING
-}
