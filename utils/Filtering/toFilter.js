@@ -1,5 +1,6 @@
 import swingmanProducts from '../../data/data.js';
 import { initGallery } from '../../components/Gallery/gallery.js';
+//import { handleInput } from '../../components/Filters/price.js';
 
 let filteredItems = [];
 
@@ -26,7 +27,7 @@ export const toFilterPrice = (event) => {
     const clickedButton = event.type;
     const input = document.querySelector('.rtc--swingman-filters-price_input');
 
-    if (clickedButton === 'click') {
+    if (clickedButton === 'click' && input.valueAsNumber > 0 && input.valueAsNumber < 1000) {
 
         const filteredProductsByPrice = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
 
@@ -34,6 +35,8 @@ export const toFilterPrice = (event) => {
             ...filteredProductsByPrice
         ];
 
+    } else {
+        return;
     }
 
     initGallery(filteredItems);

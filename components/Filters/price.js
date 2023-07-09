@@ -34,13 +34,13 @@ export const createPriceFilter = () => {
     return priceContainer;
 };
 
-const handleInput = (event) => {
+export const handleInput = (event) => {
     let introducedNumber = event.target.value;
 
     if (introducedNumber.length >= 0 && introducedNumber.length <= 3) {
         return introducedNumber;
     } else {
-        event.target.valueAsNumber = 0;
-        return event.target.valueAsNumber;
+        event.target.value = '';
+        return;
     }
 };
