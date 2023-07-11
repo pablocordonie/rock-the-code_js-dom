@@ -15,7 +15,7 @@ export const createSellersFilter = () => {
 
     const select = document.createElement('select');
     select.classList.add('rtc--swingman-filters-sellers_select');
-    select.setAttribute('name', 'sellers');
+    select.setAttribute('name', 'vendedores');
     select.setAttribute('id', 'sellers_select');
 
     const emptyOption = document.createElement('option');

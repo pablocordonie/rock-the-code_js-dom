@@ -2,6 +2,7 @@ import swingmanProducts from '../../data/data.js';
 import { initGallery } from '../../components/Gallery/gallery.js';
 import { createSellersFilter } from '../../components/Filters/sellers.js';
 import { createPriceFilter } from '../../components/Filters/price.js';
+import { createNameFilter } from '../../components/Filters/name.js';
 import { createFiltersCleaner, toCleanFilters } from '../../components/Filters/cleaner.js';
 
 let abierto = false;
@@ -13,6 +14,7 @@ export const toggleButton = (event) => {
     if (clickedButton) {
         menu.style.height = '3rem';
         abierto = false;
+        menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
@@ -28,6 +30,7 @@ export const toggleMenu = () => {
         abierto = true;
         menu.appendChild(createSellersFilter());
         menu.appendChild(createPriceFilter());
+        menu.appendChild(createNameFilter());
         menu.appendChild(createFiltersCleaner());
 
         if (menu.lastChild.firstChild.textContent === 'LIMPIAR FILTROS') {
@@ -37,6 +40,7 @@ export const toggleMenu = () => {
     } else {
         menu.style.height = '3rem';
         abierto = false;
+        menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);

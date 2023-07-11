@@ -41,3 +41,7 @@ export const toFilterPrice = (event) => {
 
     initGallery(filteredItems);
 };
+
+export const toFilterName = () => {
+
+};

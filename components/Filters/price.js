@@ -15,11 +15,11 @@ export const createPriceFilter = () => {
     const input = document.createElement('input');
     input.classList.add('rtc--swingman-filters-price_input');
     input.setAttribute('type', 'number');
-    input.setAttribute('name', 'price');
+    input.setAttribute('name', 'precio');
     input.setAttribute('id', 'price_input');
     input.setAttribute('min', 0);
     input.setAttribute('max', 999);
-    input.addEventListener('change', handleInput);
+    input.addEventListener('change', handlePriceInput);
     priceContainer.appendChild(input);
 
     const button = document.createElement('button');
@@ -34,10 +34,10 @@ export const createPriceFilter = () => {
     return priceContainer;
 };
 
-export const handleInput = (event) => {
-    let introducedNumber = event.target.value;
+const handlePriceInput = (event) => {
+    let introducedNumber = event.target.valueAsNumber;
 
-    if (introducedNumber.length >= 0 && introducedNumber.length <= 3) {
+    if (introducedNumber !== 0 || introducedNumber.length > 0 && introducedNumber.length <= 3) {
         return introducedNumber;
     } else {
         event.target.value = '';
