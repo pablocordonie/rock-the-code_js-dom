@@ -1,4 +1,4 @@
-import { toggleMenu } from '../../utils/Toggle/toggle.js';
+import { toggleMenu } from '../../utils/CallToAction/cta.js';
 
 export const createFiltersAside = () => {
     const aside = document.createElement('aside');

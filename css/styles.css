@@ -87,8 +87,8 @@ footer p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 4rem 4rem 4rem;
+    gap: 2rem;
+    padding: 3rem 4rem 0 4rem;
 }
 
 .rtc--swingman-filters-sellers_label {
@@ -110,8 +110,8 @@ footer p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 0 4rem 4rem 4rem;
+    gap: 2rem;
+    padding: 4rem 4rem 8rem 4rem;
 }
 
 .rtc--swingman-filters-price_label {
@@ -133,37 +133,6 @@ footer p {
     width: 6rem;
     height: 2rem;
     text-align: center;
-}
-
-.rtc--swingman-filters-name_div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 0 4rem 0 4rem;
-}
-
-.rtc--swingman-filters-name_label {
-    color: var(--primary);
-    font-family: 'Lato', sans-serif;
-    font-size: 1.25rem;
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
-}
-
-.rtc--swingman-filters-name_input {
-    width: 12rem;
-    height: 2rem;
-}
-
-.rtc--swingman-filters-name_icon {
-    width: 1.7rem;
-    height: 1.7rem;
-    cursor: pointer;
-    position: relative;
-    bottom: 3.4rem;
-    left: 5rem;
 }
 
 .rtc--swingman-filters-cleaner_div {
@@ -239,16 +208,17 @@ footer p {
 
 @media screen and (max-width: 389px) {
 
-    .rtc--swingman-filters-sellers_div, .rtc--swingman-filters-price_div {
+    .rtc--swingman-filters-sellers_div {
         gap: 1rem;
-        padding: 1rem 2rem 1rem 2rem; 
+        padding: 2rem 4rem;
     }
 
-    .rtc--swingman-filters-name_div {
-        padding: 1rem 2rem 0 2rem; 
+    .rtc--swingman-filters-price_div {
+        gap: 1rem;
+        padding: 2rem 4rem 4rem 4rem;
     }
 
-    .rtc--swingman-filters-sellers_label, .rtc--swingman-filters-price_label, .rtc--swingman-filters-name_label {
+    .rtc--swingman-filters-sellers_label, .rtc--swingman-filters-price_label {
         font-size: 1.125rem; 
     }
 
@@ -269,18 +239,16 @@ footer p {
         height: 2rem;
     }
 
-    .rtc--swingman-filters-sellers_label, .rtc--swingman-filters-price_label, .rtc--swingman-filters-name_label {
+    .rtc--swingman-filters-sellers_label,
+    .rtc--swingman-filters-price_label {
         font-size: 1rem; 
     }
 
-    .rtc--swingman-filters-sellers_input, .rtc--swingman-filters-price_input, .rtc--swingman-filters-name_input, .rtc--swingman-filters-price_search, .rtc--swingman-filters-cleaner_button {
+    .rtc--swingman-filters-sellers_input,
+    .rtc--swingman-filters-price_input,
+    .rtc--swingman-filters-price_search,
+    .rtc--swingman-filters-cleaner_button {
         height: 1.75rem;
-    }
-
-    .rtc--swingman-filters-name_icon {
-        bottom: 3.25rem;
-        width: 1.6rem;
-        height: 1.6rem;
     }
 
     .rtc--swingman-card-img {

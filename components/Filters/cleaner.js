@@ -1,4 +1,4 @@
-import { toggleButton } from '../../utils/Toggle/toggle.js';
+import { toggleCleanerButton } from '../../utils/CallToAction/cta.js';
 
 export const createFiltersCleaner = () => {
 
@@ -10,13 +10,9 @@ export const createFiltersCleaner = () => {
     button.classList.add('rtc--swingman-filters-cleaner_button');
     button.setAttribute('type', 'button');
     button.innerText = `${cleaner_title.toUpperCase()}`;
+    button.addEventListener('click', toggleCleanerButton);
     cleanerContainer.appendChild(button);
 
     return cleanerContainer;
+
 }
-
-export const toCleanFilters = () => {
-    const button = document.querySelector('.rtc--swingman-filters-cleaner_button');
-
-    button.addEventListener('click', toggleButton);
-};

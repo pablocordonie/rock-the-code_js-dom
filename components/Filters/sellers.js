@@ -1,5 +1,5 @@
 import swingmanProducts from '../../data/data.js';
-import { toFilterSellers } from '../../utils/Filtering/toFilter.js';
+import { toFilterSellers } from '../../utils/CallToAction/cta.js';
 
 export const createSellersFilter = () => {
 

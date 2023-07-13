@@ -1,4 +1,4 @@
-import { toFilterPrice } from '../../utils/Filtering/toFilter.js';
+import { toFilterPrice } from '../../utils/CallToAction/cta.js';
 
 export const createPriceFilter = () => {
 
@@ -37,7 +37,7 @@ export const createPriceFilter = () => {
 const handlePriceInput = (event) => {
     let introducedNumber = event.target.valueAsNumber;
 
-    if (introducedNumber !== 0 || introducedNumber.length > 0 && introducedNumber.length <= 3) {
+    if (introducedNumber > 0 && introducedNumber < 1000) {
         return introducedNumber;
     } else {
         event.target.value = '';
