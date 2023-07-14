@@ -80,7 +80,7 @@ footer p {
     width: 3rem;
     height: 3rem;
     position: absolute;
-    left: 50%;
+    left: 45%;
 }
 
 .rtc--swingman-filters-sellers_div {
@@ -133,6 +133,13 @@ footer p {
     width: 6rem;
     height: 2rem;
     text-align: center;
+}
+
+.rtc--swingman-filters-sellers_select option,
+.rtc--swingman-filters-price_input,
+.rtc--swingman-filters-price_search,
+.rtc--swingman-filters-cleaner_button {
+    font-size: 0.85rem; 
 }
 
 .rtc--swingman-filters-cleaner_div {
@@ -239,9 +246,20 @@ footer p {
         height: 2rem;
     }
 
+    .rtc--swingman-filters-menu-nba_logo {
+        left: 43.5%;
+    }
+
     .rtc--swingman-filters-sellers_label,
     .rtc--swingman-filters-price_label {
         font-size: 1rem; 
+    }
+
+    .rtc--swingman-filters-sellers_select option,
+    .rtc--swingman-filters-price_input,
+    .rtc--swingman-filters-price_search,
+    .rtc--swingman-filters-cleaner_button {
+        font-size: 0.8rem; 
     }
 
     .rtc--swingman-filters-sellers_input,

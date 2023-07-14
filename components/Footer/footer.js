@@ -1,12 +1,14 @@
 const socialWebs = [
-    { web: 'facebook', image: './assets/facebook.png' },
-    { web: 'twitter', image: './assets/twitter.png' },
-    { web: 'instagram', image: './assets/instagram.png' }
+    { web: 'facebook', image: './assets/facebook.png', link: 'https://es-es.facebook.com/' },
+    { web: 'twitter', image: './assets/twitter.png', link: 'https://twitter.com/?lang=ES' },
+    { web: 'instagram', image: './assets/instagram.png', link: 'https://www.instagram.com/' }
 ];
 
 const socialWebTemplate = (socialWeb) => `
     <li class="rtc--swingman-footer-social_web-${socialWeb.web}">
-        <img class="rtc--swingman-footer-social_web-img" src="${socialWeb.image}" alt="${socialWeb.web}">
+        <a href="${socialWeb.link}" target="_blank">
+            <img class="rtc--swingman-footer-social_web-img" src="${socialWeb.image}" alt="${socialWeb.web}">
+        </a>
     </li>
 `;
 
