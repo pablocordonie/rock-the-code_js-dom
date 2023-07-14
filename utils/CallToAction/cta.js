@@ -23,7 +23,7 @@ export const toFilterSellers = (event) => {
 export const toFilterPrice = (event) => {
 
     const clickedButton = event.type;
-    const input = document.querySelector('.rtc--swingman-filters-price_input');
+    const input = document.querySelector('.rtc--swingman-header-filters-price_input');
 
     if (clickedButton === 'click' && input.valueAsNumber > 0 && input.valueAsNumber < 1000) {
         filteredItems.length ? filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber) : filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
@@ -36,7 +36,7 @@ export const toFilterPrice = (event) => {
 
 export const toggleCleanerButton = (event) => {
 
-    const menu = document.querySelector('.rtc--swingman-filters-menu');
+    const menu = document.querySelector('.rtc--swingman-header-filters-menu');
     const clickedButton = event.target.type;
 
     if (clickedButton) {
@@ -53,7 +53,7 @@ export const toggleCleanerButton = (event) => {
 
 export const toggleMenu = () => {
 
-    const menu = document.querySelector('.rtc--swingman-filters-menu');
+    const menu = document.querySelector('.rtc--swingman-header-filters-menu');
 
     if (!abierto) {
         menu.style.height = '75%';
