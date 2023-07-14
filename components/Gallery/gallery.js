@@ -1,8 +1,8 @@
 
 const productTemplate = (product) => `
     <li class="rtc--swingman-products-gallery-item">
-        <a href="${product.link}" class="rtc--swingman-products-gallery-card">
-            <img src="${product.image}" alt="${product.name}" class="rtc--swingman-products-gallery-card-img">
+        <a href="${product.link}" class="rtc--swingman-products-gallery-card" role="link" aria-label="Ir a la ficha del siguiente producto: ${product.name}">
+            <img src="${product.image}" alt="${product.name} role="img" aria-label="Imagen del siguiente producto: ${product.name}" class="rtc--swingman-products-gallery-card-img">
             <h3 class="rtc--swingman-products-gallery-card-h3">${product.name}</h3>
             <p>${product.price} €</p>
         </a>

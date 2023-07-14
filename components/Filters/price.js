@@ -10,6 +10,8 @@ export const createPriceFilter = () => {
     label.classList.add('rtc--swingman-header-filters-price_label');
     label.innerText = `${price_title.toUpperCase()}`;
     label.setAttribute('for', 'price_input');
+    label.setAttribute('role', 'label');
+    label.setAttribute('aria-label', 'Selecciona la siguiente opción para filtrar por precio');
     priceContainer.appendChild(label);
 
     const input = document.createElement('input');
@@ -19,6 +21,8 @@ export const createPriceFilter = () => {
     input.setAttribute('id', 'price_input');
     input.setAttribute('min', 0);
     input.setAttribute('max', 999);
+    input.setAttribute('role', 'input');
+    input.setAttribute('aria-label', `Haz click aquí para escribir su tope máximo de precio y, después, seleccione la siguiente opción para buscar`);
     input.addEventListener('change', handlePriceInput);
     priceContainer.appendChild(input);
 
@@ -26,6 +30,8 @@ export const createPriceFilter = () => {
     const search = 'buscar';
     button.classList.add('rtc--swingman-header-filters-price_search');
     button.setAttribute('type', 'button');
+    button.setAttribute('role', 'button');
+    button.setAttribute('aria-label', `Haz click aquí para ${search}`);
     button.innerText = `${search.toUpperCase()}`;
 
     button.addEventListener('click', toFilterPrice);

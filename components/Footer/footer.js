@@ -6,8 +6,8 @@ const socialWebs = [
 
 const socialWebTemplate = (socialWeb) => `
     <li class="rtc--swingman-footer-social_web-${socialWeb.web}">
-        <a href="${socialWeb.link}" target="_blank">
-            <img class="rtc--swingman-footer-social_web-img" src="${socialWeb.image}" alt="${socialWeb.web}">
+        <a href="${socialWeb.link}" class="rtc--swingman-footer-social_web-${socialWeb.web}-link" role="link" aria-label="Ir a ${socialWeb.web}.com" target="_blank">
+            <img src="${socialWeb.image}" alt="${socialWeb.web}" class="rtc--swingman-footer-social_web-img" role="img" aria-label="Icono de ${socialWeb.web}">
         </a>
     </li>
 `;
@@ -23,9 +23,9 @@ const createFooter = () => {
     socialWebs.forEach((socialWeb) => socialWebsList.innerHTML += socialWebTemplate(socialWeb));
 
     const footerContainerTemplate = () => `
-        <div class="rtc--swingman-footer_div">
+        <div class="rtc--swingman-footer">
             ${socialWebsList.outerHTML}
-            <p>${copyright}</p>
+            <p class="rtc--swingman-footer-copyright-p" role="paragraph" aria-label="${copyright}">${copyright}</p>
         </div>
     `;
 

@@ -10,11 +10,15 @@ export const createFiltersAside = () => {
     filtersImg.src = './assets/menu.png';
     filtersImg.alt = 'Menú de filtros de búsqueda';
     filtersImg.classList.add('rtc--swingman-header-filters-menu-img');
+    filtersImg.setAttribute('role', 'img');
+    filtersImg.setAttribute('aria-label', 'Accede al menú de filtros');
 
     const nbaImg = document.createElement('img');
     nbaImg.src = './assets/logonba.png';
     nbaImg.alt = 'Logo de la NBA';
     nbaImg.classList.add('rtc--swingman-header-filters-menu-nba_logo');
+    nbaImg.setAttribute('role', 'img');
+    nbaImg.setAttribute('aria-label', 'Icono oficial de la NBA');
 
     wrapper.appendChild(filtersImg);
     wrapper.appendChild(nbaImg);
