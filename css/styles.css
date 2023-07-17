@@ -88,7 +88,7 @@ footer p {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding: 3rem 4rem 0 4rem;
+    padding: 2rem 4rem 4rem 4rem;
 }
 
 .rtc--swingman-header-filters-sellers_label {
@@ -111,7 +111,7 @@ footer p {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding: 4rem 4rem 8rem 4rem;
+    padding: 0 4rem 4rem 4rem;
 }
 
 .rtc--swingman-header-filters-price_label {
@@ -145,6 +145,7 @@ footer p {
 .rtc--swingman-header-filters-cleaner_div {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .rtc--swingman-header-filters-cleaner_button {
@@ -168,10 +169,6 @@ footer p {
     gap: 4rem;
     margin: 0 2.5rem;
 }
-
-/*.rtc--swingman-gallery-h2 {
-    text-align: center;
-}*/
 
 .rtc--swingman-products-gallery-card {
     display: flex;
@@ -213,32 +210,75 @@ footer p {
     height: 2rem;
 }
 
-@media screen and (max-width: 389px) {
+@media (min-width: 769px) {
+
+    /* PENDING */
+
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+
+    .rtc--swingman-products-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .rtc--swingman-products-gallery-item {
+        width: 45%;
+    }
+
+    .rtc--swingman-products-gallery-card {
+        height: 24rem;
+        gap: 2rem;
+    }
+
+    .rtc--swingman-products-gallery-card-img {
+        width: 80%;
+        height: 14rem;
+    }
+
+    .rtc--swingman-products-gallery-card-h3, p {
+        font-size: 1rem;
+    }
+
+    .rtc--swingman-products-gallery-card-notfound {
+        padding: 12rem 0 14rem 0;
+    }
+
+}
+
+@media (max-width: 449px) {
 
     .rtc--swingman-header-filters-sellers_div {
         gap: 1rem;
-        padding: 2rem 4rem;
     }
 
     .rtc--swingman-header-filters-price_div {
         gap: 1rem;
-        padding: 2rem 4rem 4rem 4rem;
     }
 
     .rtc--swingman-header-filters-sellers_label, .rtc--swingman-header-filters-price_label {
         font-size: 1.125rem; 
     }
 
-    .rtc--swingman-header-card-img {
+    .rtc--swingman-products-gallery-card-img {
         height: 16rem;
     }
 
-    .rtc--swingman-header-card-h3, p {
-        font-size: 0.95rem;
+    .rtc--swingman-products-gallery-card-h3, p {
+        font-size: 1rem;
     }
+
+    .rtc--swingman-products-gallery-card-notfound {
+        padding: 12rem 0 14rem 0;
+    }
+
 }
 
-@media screen and (max-width: 290px) {
+@media (max-width: 320px) {
 
     .rtc--header-logo-h1 {
         font-size: 2rem;
@@ -267,6 +307,10 @@ footer p {
     .rtc--swingman-header-filters-price_search,
     .rtc--swingman-header-filters-cleaner_button {
         height: 1.75rem;
+    }
+
+    .rtc--swingman-header-filters-cleaner_div {
+        padding-top: 4rem;
     }
 
     .rtc--swingman-products-gallery-card-img {

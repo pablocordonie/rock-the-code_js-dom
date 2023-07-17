@@ -177,7 +177,7 @@ const swingmanProducts = [
     },
     {
         id: 23,
-        name: 'Minnesota Timberwolves Nike Icon Editon - Unisex',
+        name: 'Minnesota Timberwolves Nike Icon Edition - Unisex',
         price: 100,
         seller: '24Segons',
         image: 'https://24segons.es/129073-home_default/swingman-anthony-towns-timberwolves-icon.jpg',

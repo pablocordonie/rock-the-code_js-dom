@@ -56,7 +56,7 @@ export const toggleMenu = () => {
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
 
     if (!abierto) {
-        menu.style.height = '75%';
+        menu.style.height = '36rem';
         abierto = true;
         menu.appendChild(createSellersFilter());
         menu.appendChild(createPriceFilter());
