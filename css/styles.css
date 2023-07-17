@@ -77,10 +77,11 @@ footer p {
 }
 
 .rtc--swingman-header-filters-menu-nba_logo {
+    position: fixed;
+    top: 0;
+    left: 45%;
     width: 3rem;
     height: 3rem;
-    position: absolute;
-    left: 45%;
 }
 
 .rtc--swingman-header-filters-sellers_div {
@@ -209,14 +210,34 @@ footer p {
     width: 2rem;
     height: 2rem;
 }
-
+/*
 @media (min-width: 769px) {
 
-    /* PENDING */
+    .rtc--swingman-header-logo {
+        margin-top: 2.5rem;
+    }
+
+    .rtc--swingman-header-filters-menu {
+        width: 2.5rem;
+        height: 100%;
+    }
+
+    .rtc--swingman-header-filters-menu-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .rtc--swingman-header-filters-menu-nba_logo {
+        left: 48.5%;
+    }
 
 }
-
+*/
 @media (min-width: 450px) and (max-width: 768px) {
+
+    .rtc--swingman-header-filters-menu-nba_logo {
+        left: 47%;
+    }
 
     .rtc--swingman-products-gallery {
         display: flex;
