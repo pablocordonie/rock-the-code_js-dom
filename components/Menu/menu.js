@@ -1,10 +1,10 @@
 import { toggleVerticalMenu, toggleHorizontalMenu } from '../../utils/CallToAction/cta.js';
 
-export const createFiltersNav = () => {
+export const createFiltersMenu = () => {
 
-    const nav = document.createElement('nav');
+    const section = document.createElement('section');
 
-    nav.classList.add('rtc--swingman-header-filters-menu');
+    section.classList.add('rtc--swingman-header-filters-menu');
 
     const filtersImg = document.createElement('img');
     filtersImg.src = './assets/menu.png';
@@ -20,13 +20,13 @@ export const createFiltersNav = () => {
     nbaImg.setAttribute('role', 'img');
     nbaImg.setAttribute('aria-label', 'Icono oficial de la NBA');
 
-    nav.appendChild(filtersImg);
-    nav.appendChild(nbaImg);
-    return nav;
+    section.appendChild(filtersImg);
+    section.appendChild(nbaImg);
+    return section;
 
 }
 
-export const filtersMenu = () => {
+export const displayFiltersMenu = () => {
 
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');;
     const menuImg = document.querySelector('.rtc--swingman-header-filters-menu-img');

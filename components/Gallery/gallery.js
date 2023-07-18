@@ -18,7 +18,7 @@ const createGallery = (products) => {
         productsList.innerHTML += productTemplate(product);
     }
 
-    const productsGallery = document.createElement('section');
+    const productsGallery = document.createElement('article');
     productsGallery.classList.add('rtc--swingman-products');
     productsGallery.appendChild(productsList);
 

@@ -1,4 +1,4 @@
-import { createFiltersNav, filtersMenu } from '../Nav/nav.js';
+import { createFiltersMenu, displayFiltersMenu } from '../Menu/menu.js';
 
 const createHeader = () => {
 
@@ -10,8 +10,8 @@ const createHeader = () => {
     `;
 
     header.innerHTML += headerContainerTemplate();
-    header.appendChild(createFiltersNav());
-    filtersMenu();
+    header.appendChild(createFiltersMenu());
+    displayFiltersMenu();
     return header;
 
 }
