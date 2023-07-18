@@ -47,7 +47,7 @@ export const toggleCleanerButton = (event) => {
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
     const clickedButton = event.target.type;
 
-    if (clickedButton && screen.width < 768) {
+    if (clickedButton && screen.width <= 768) {
 
         menu.style.height = '3rem';
         abierto = false;
