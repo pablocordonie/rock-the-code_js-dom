@@ -13,15 +13,23 @@ export const toFilterSellers = (event) => {
 
     if (selectedOption.value !== '') {
 
-        filteredItems.length
-            ? filteredItems = filteredItems.filter((product) => product.seller === event.target.value)
-            : filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
+        if (filteredItems.length) {
+
+            filteredItems = filteredItems.filter((product) => product.seller === event.target.value);
+
+        } else {
+
+            filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
+
+        }
 
     } else {
         return;
     }
 
     initGallery(filteredItems);
+    filteredItems = [];
+
 };
 
 export const toFilterPrice = (event) => {
@@ -31,15 +39,22 @@ export const toFilterPrice = (event) => {
 
     if (clickedButton === 'click' && input.valueAsNumber > 0 && input.valueAsNumber < 1000) {
 
-        filteredItems.length
-            ? filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber)
-            : filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
+        if (filteredItems.length) {
+
+            filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber)
+
+        } else {
+
+            filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
+        }
 
     } else {
         return;
     }
 
     initGallery(filteredItems);
+    filteredItems = [];
+
 };
 
 export const toggleCleanerButton = (event) => {
@@ -69,7 +84,7 @@ export const toggleCleanerButton = (event) => {
 
 };
 
-export const toggleVerticalMenu = (e) => {
+export const toggleVerticalMenu = () => {
 
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
 
@@ -90,7 +105,7 @@ export const toggleVerticalMenu = (e) => {
 
 };
 
-export const toggleHorizontalMenu = (e) => {
+export const toggleHorizontalMenu = () => {
 
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
 
