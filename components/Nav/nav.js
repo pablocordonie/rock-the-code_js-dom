@@ -1,7 +1,7 @@
 import { toggleMenu } from '../../utils/CallToAction/cta.js';
 
-export const createFiltersAside = () => {
-    const aside = document.createElement('aside');
+export const createFiltersNav = () => {
+    const nav = document.createElement('nav');
 
     const wrapper = document.createElement('div');
     wrapper.classList.add('rtc--swingman-header-filters-menu');
@@ -22,8 +22,8 @@ export const createFiltersAside = () => {
 
     wrapper.appendChild(filtersImg);
     wrapper.appendChild(nbaImg);
-    aside.appendChild(wrapper);
-    return aside;
+    nav.appendChild(wrapper);
+    return nav;
 }
 
 export const filtersMenu = () => {

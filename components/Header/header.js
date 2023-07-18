@@ -1,4 +1,4 @@
-import { createFiltersAside, filtersMenu } from '../Aside/aside.js';
+import { createFiltersNav, filtersMenu } from '../Nav/nav.js';
 
 const createHeader = () => {
     const header = document.querySelector('header');
@@ -9,7 +9,7 @@ const createHeader = () => {
     `;
 
     header.innerHTML += headerContainerTemplate();
-    header.appendChild(createFiltersAside());
+    header.appendChild(createFiltersNav());
     filtersMenu();
     return header;
 }
