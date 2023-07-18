@@ -12,7 +12,11 @@ export const toFilterSellers = (event) => {
     const selectedOption = event.target.selectedOptions[0];
 
     if (selectedOption.value !== '') {
-        filteredItems.length ? filteredItems = filteredItems.filter((product) => product.seller === event.target.value) : filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
+
+        filteredItems.length
+            ? filteredItems = filteredItems.filter((product) => product.seller === event.target.value)
+            : filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
+
     } else {
         return;
     }
@@ -26,7 +30,11 @@ export const toFilterPrice = (event) => {
     const input = document.querySelector('.rtc--swingman-header-filters-price_input');
 
     if (clickedButton === 'click' && input.valueAsNumber > 0 && input.valueAsNumber < 1000) {
-        filteredItems.length ? filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber) : filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
+
+        filteredItems.length
+            ? filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber)
+            : filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
+
     } else {
         return;
     }
@@ -43,23 +51,21 @@ export const toggleCleanerButton = (event) => {
 
         menu.style.height = '3rem';
         abierto = false;
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-        initGallery(swingmanProducts);
-        filteredItems = [];
+
 
     } else {
 
         menu.style.width = '2.5rem';
         abierto = false;
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-        menu.removeChild(menu.lastChild);
-        initGallery(swingmanProducts);
-        filteredItems = [];
 
     };
+
+    menu.removeChild(menu.lastChild);
+    menu.removeChild(menu.lastChild);
+    menu.removeChild(menu.lastChild);
+
+    initGallery(swingmanProducts);
+    filteredItems = [];
 
 };
 
