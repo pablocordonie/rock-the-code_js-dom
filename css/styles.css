@@ -210,8 +210,8 @@ footer p {
     width: 2rem;
     height: 2rem;
 }
-/*
-@media (min-width: 769px) {
+
+@media (min-width: 768px) {
 
     .rtc--swingman-header-logo {
         margin-top: 2.5rem;
@@ -232,8 +232,8 @@ footer p {
     }
 
 }
-*/
-@media (min-width: 450px) and (max-width: 768px) {
+
+@media (min-width: 450px) and (max-width: 767px) {
 
     .rtc--swingman-header-filters-menu-nba_logo {
         left: 47%;

@@ -39,7 +39,8 @@ export const toggleCleanerButton = (event) => {
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
     const clickedButton = event.target.type;
 
-    if (clickedButton) {
+    if (clickedButton && screen.width < 768) {
+
         menu.style.height = '3rem';
         abierto = false;
         menu.removeChild(menu.lastChild);
@@ -47,11 +48,22 @@ export const toggleCleanerButton = (event) => {
         menu.removeChild(menu.lastChild);
         initGallery(swingmanProducts);
         filteredItems = [];
+
+    } else {
+
+        menu.style.width = '2.5rem';
+        abierto = false;
+        menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
+        initGallery(swingmanProducts);
+        filteredItems = [];
+
     };
 
 };
 
-export const toggleMenu = () => {
+export const toggleVerticalMenu = (e) => {
 
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');
 
@@ -68,6 +80,30 @@ export const toggleMenu = () => {
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
         menu.removeChild(menu.lastChild);
+    }
+
+};
+
+export const toggleHorizontalMenu = (e) => {
+
+    const menu = document.querySelector('.rtc--swingman-header-filters-menu');
+
+    if (!abierto) {
+
+        menu.style.width = '24rem';
+        abierto = true;
+        menu.appendChild(createSellersFilter());
+        menu.appendChild(createPriceFilter());
+        menu.appendChild(createFiltersCleaner());
+
+    } else {
+
+        menu.style.width = '2.5rem';
+        abierto = false;
+        menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
+        menu.removeChild(menu.lastChild);
+
     }
 
 };

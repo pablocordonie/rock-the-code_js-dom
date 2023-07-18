@@ -1,6 +1,7 @@
 import { createFiltersNav, filtersMenu } from '../Nav/nav.js';
 
 const createHeader = () => {
+
     const header = document.querySelector('header');
     const headerContainerTemplate = () => `
         <div class="rtc--swingman-header-logo">
@@ -12,6 +13,7 @@ const createHeader = () => {
     header.appendChild(createFiltersNav());
     filtersMenu();
     return header;
+
 }
 
 export default createHeader;
