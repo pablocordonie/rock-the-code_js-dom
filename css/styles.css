@@ -12,10 +12,8 @@
 :root {
     --background: #ffffff;
     --paragraph: #000000;
-    --backgroundOpacity: #ffffff00;
     --primary: #002b5c;
     --secondary: #c9082c;
-    --terciary: #f9c51a;
 }
 
 h1,
@@ -210,6 +208,10 @@ footer p {
 }
 
 @media (min-width: 768px) {
+
+    footer p {
+        padding-left: 3rem;
+    }
 
     .rtc--swingman-header-logo {
         margin-top: 0.5rem;
