@@ -9,13 +9,31 @@ let filteredItems = [];
 
 export const toFilterSellers = (event) => {
 
-    const selectedOption = event.target.selectedOptions[0];
+    const selectedEmptyOption = event.target.selectedOptions[0];
+    const input = document.querySelector('.rtc--swingman-header-filters-price_input');
 
-    if (selectedOption.value !== '') {
+    if (selectedEmptyOption.value !== '') {
 
         if (filteredItems.length) {
 
-            filteredItems = filteredItems.filter((product) => product.seller === event.target.value);
+            for (let filteredItem of filteredItems) {
+
+                if (filteredItem.seller !== event.target.value && input.value === '') {
+
+                    filteredItems = [];
+                    filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
+
+                } else if (filteredItem.seller !== event.target.value && filteredItem.price <= input.value) {
+
+                    filteredItem = {};
+
+                } else if (filteredItem.seller === event.target.value && filteredItem.price <= input.value) {
+
+                    filteredItems = filteredItems.filter((product) => product.seller === event.target.value);
+
+                }
+
+            }
 
         } else {
 
@@ -24,11 +42,12 @@ export const toFilterSellers = (event) => {
         }
 
     } else {
+
         return;
+
     }
 
     initGallery(filteredItems);
-    filteredItems = [];
 
 };
 
@@ -39,21 +58,15 @@ export const toFilterPrice = (event) => {
 
     if (clickedButton === 'click' && input.valueAsNumber > 0 && input.valueAsNumber < 1000) {
 
-        if (filteredItems.length) {
-
-            filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber)
-
-        } else {
-
-            filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
-        }
+        filteredItems.length ? filteredItems = filteredItems.filter((product) => product.price <= input.valueAsNumber) : filteredItems = swingmanProducts.filter((product) => product.price <= input.valueAsNumber);
 
     } else {
+
         return;
+
     }
 
     initGallery(filteredItems);
-    filteredItems = [];
 
 };
 
