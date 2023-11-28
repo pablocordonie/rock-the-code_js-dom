@@ -4,7 +4,7 @@ const productTemplate = (product) => `
         <a href="${product.link}" class="rtc--swingman-products-gallery-card" role="link" aria-label="Ir a la ficha del siguiente producto: ${product.name}">
             <img src="${product.image}" alt="${product.name} role="img" aria-label="Imagen del siguiente producto: ${product.name}" class="rtc--swingman-products-gallery-card-img">
             <h3 class="rtc--swingman-products-gallery-card-h3">${product.name}</h3>
-            <p>${product.price} €</p>
+            <p>${product.price.toFixed(2).toString().split('.')} €</p>
         </a>
     </li>
     `;

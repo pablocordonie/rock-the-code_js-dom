@@ -1,374 +1,375 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    --background: #ffffff;
-    --paragraph: #000000;
-    --primary: #002b5c;
-    --secondary: #c9082c;
+  --background: #ffffff;
+  --paragraph: #000000;
+  --primary: #002b5c;
+  --secondary: #c9082c;
 }
 
 h1,
 h3,
 p {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 h2 {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 p {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 section {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 footer {
-    background-color: var(--background);
-    box-shadow: 0 0 1.5rem -0.25rem var(--primary);
+  background-color: var(--background);
+  box-shadow: 0 0 1.5rem -0.25rem var(--primary);
 }
 
 footer p {
-    color: var(--paragraph);
-    font-size: 0.75rem;
+  color: var(--paragraph);
+  font-size: 0.75rem;
 }
 
 .rtc--swingman-header-logo {
-    display: flex;
-    justify-content: center;
-    margin: 5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 0 0;
 }
 
 .rtc--swingman-header-logo-h1 {
-    color: var(--primary);
-    width: 16rem;
-    height: 4rem;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
+  color: var(--primary);
+  width: 16rem;
+  height: 4rem;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-menu {
-    background-color: var(--background);
-    box-shadow: 0 0 1.5rem -0.5rem var(--primary);
-    height: 3rem;
-    position: fixed;
-    top: 0;
-    transition: all 0.1s;
-    width: 100%;
+  background-color: var(--background);
+  box-shadow: 0 0 1.5rem -0.5rem var(--primary);
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  transition: all 0.1s;
+  width: 100%;
 }
 
 .rtc--swingman-header-filters-menu-img {
-    width: 3rem;
-    height: 3rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .rtc--swingman-header-filters-menu-nba_logo {
-    position: fixed;
-    top: 0;
-    left: 45%;
-    width: 3rem;
-    height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 45%;
+  width: 3rem;
+  height: 3rem;
 }
 
 .rtc--swingman-header-filters-sellers_div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 4rem 4rem 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
 .rtc--swingman-header-filters-sellers_label {
-    color: var(--primary);
-    font-family: 'Lato', sans-serif;
-    font-size: 1.25rem;
-    width: 16rem;
-    height: 2rem;
-    text-align: center;
+  color: var(--primary);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  width: 16rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-sellers_select {
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-price_div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 4rem 4rem 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 4rem 4rem 4rem;
 }
 
 .rtc--swingman-header-filters-price_label {
-    color: var(--secondary);
-    font-family: 'Lato', sans-serif;
-    font-size: 1.25rem;
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
+  color: var(--secondary);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-price_input {
-    width: 6rem;
-    height: 2rem;
-    text-align: center;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-price_search {
-    width: 6rem;
-    height: 2rem;
-    text-align: center;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-header-filters-sellers_select option,
 .rtc--swingman-header-filters-price_input,
 .rtc--swingman-header-filters-price_search,
 .rtc--swingman-header-filters-cleaner_button {
-    font-size: 0.85rem; 
+  font-size: 0.85rem;
 }
 
 .rtc--swingman-header-filters-cleaner_div {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .rtc--swingman-header-filters-cleaner_button {
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
 }
 
 .rtc--swingman-products {
-    margin: 2.5rem 0 5rem 0;
+  margin: 2.5rem 0 5rem 0;
 }
 
 .rtc--swingman-products-gallery-card-notfound {
-    padding: 18rem 0;
-    text-align: center;
+  padding: 18rem 0;
+  text-align: center;
 }
 
 .rtc--swingman-products-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 6rem;
 }
 
 .rtc--swingman-products-gallery-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 2.5rem -0.5rem var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2.5rem -0.5rem var(--primary);
 }
 
 .rtc--swingman-products-gallery-card:hover {
-    box-shadow: 0 0 2.5rem -0.5rem var(--secondary);
+  box-shadow: 0 0 2.5rem -0.5rem var(--secondary);
+}
+
+.rtc--swingman-products-gallery-item:nth-of-type(-n + 4)
+  .rtc--swingman-products-gallery-card-img {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .rtc--swingman-products-gallery-card-img {
-    padding-top: 1rem;
-    height: 17rem;
-    width: 75%;
+  padding-top: 1rem;
+  height: 17rem;
+  width: 75%;
 }
 
 .rtc--swingman-products-gallery-card-h3 {
-    font-size: 1.1rem;
-    width: 75%;
-    text-align: center;
+  font-size: 1.1rem;
+  width: 75%;
+  text-align: center;
 }
 
 .rtc--swingman-footer-social_webs {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-    padding: 1.5rem 1rem 3rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 1.5rem 1rem 3rem 0;
 }
 
 .rtc--swingman-footer-social_web-img {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (min-width: 768px) {
+  footer p {
+    padding-left: 3rem;
+  }
 
-    footer p {
-        padding-left: 3rem;
-    }
+  .rtc--swingman-header-logo {
+    margin-top: 0.5rem;
+  }
 
-    .rtc--swingman-header-logo {
-        margin-top: 0.5rem;
-    }
+  .rtc--swingman-header-filters-menu {
+    width: 2.5rem;
+    height: 100%;
+  }
 
-    .rtc--swingman-header-filters-menu {
-        width: 2.5rem;
-        height: 100%;
-    }
+  .rtc--swingman-header-filters-menu-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-    .rtc--swingman-header-filters-menu-img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+  .rtc--swingman-header-filters-menu-nba_logo {
+    left: -0.285rem;
+    top: 92.5%;
+  }
 
-    .rtc--swingman-header-filters-menu-nba_logo {
-        left: -0.285rem;
-        top: 92.5%;
-    }
+  .rtc--swingman-products-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .rtc--swingman-products-gallery {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-evenly;
-        gap: 2rem;
-    }
+  .rtc--swingman-products-gallery-item {
+    display: flex;
+    height: 20rem;
+    width: 12rem;
+  }
 
-    .rtc--swingman-products-gallery-item {
-        display: flex;
-        height: 20rem;
-        width: 12rem;
-    }
+  .rtc--swingman-products-gallery-card {
+    gap: 0;
+  }
 
-    .rtc--swingman-products-gallery-card {
-        gap: 0;
-    }
+  .rtc--swingman-products-gallery-card-img {
+    height: 12rem;
+  }
 
-    .rtc--swingman-products-gallery-card-img {
-        height: 12rem;
-    }
-
-    .rtc--swingman-products-gallery-card-h3, p {
-        font-size: 0.9rem;
-    }
-
+  .rtc--swingman-products-gallery-card-h3,
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 767px) {
+  .rtc--swingman-header-filters-menu-nba_logo {
+    left: 47%;
+  }
 
-    .rtc--swingman-header-filters-menu-nba_logo {
-        left: 47%;
-    }
+  .rtc--swingman-products-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
 
-    .rtc--swingman-products-gallery {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 2rem;
-    }
+  .rtc--swingman-products-gallery-item {
+    width: 45%;
+  }
 
-    .rtc--swingman-products-gallery-item {
-        width: 45%;
-    }
+  .rtc--swingman-products-gallery-card {
+    height: 24rem;
+    gap: 0;
+  }
 
-    .rtc--swingman-products-gallery-card {
-        height: 24rem;
-        gap: 0;
-    }
+  .rtc--swingman-products-gallery-card-img {
+    width: 80%;
+    height: 14rem;
+  }
 
-    .rtc--swingman-products-gallery-card-img {
-        width: 80%;
-        height: 14rem;
-    }
+  .rtc--swingman-products-gallery-card-h3,
+  p {
+    font-size: 1rem;
+  }
 
-    .rtc--swingman-products-gallery-card-h3, p {
-        font-size: 1rem;
-    }
-
-    .rtc--swingman-products-gallery-card-notfound {
-        padding: 12rem 0 14rem 0;
-    }
-
+  .rtc--swingman-products-gallery-card-notfound {
+    padding: 12rem 0 14rem 0;
+  }
 }
 
 @media (max-width: 449px) {
+  .rtc--swingman-header-filters-sellers_div {
+    gap: 1rem;
+  }
 
-    .rtc--swingman-header-filters-sellers_div {
-        gap: 1rem;
-    }
+  .rtc--swingman-header-filters-price_div {
+    gap: 1rem;
+  }
 
-    .rtc--swingman-header-filters-price_div {
-        gap: 1rem;
-    }
+  .rtc--swingman-header-filters-sellers_label,
+  .rtc--swingman-header-filters-price_label {
+    font-size: 1.125rem;
+  }
 
-    .rtc--swingman-header-filters-sellers_label, .rtc--swingman-header-filters-price_label {
-        font-size: 1.125rem; 
-    }
+  .rtc--swingman-products-gallery-card-img {
+    height: 16rem;
+  }
 
-    .rtc--swingman-products-gallery-card-img {
-        height: 16rem;
-    }
+  .rtc--swingman-products-gallery-card-h3,
+  p {
+    font-size: 1rem;
+  }
 
-    .rtc--swingman-products-gallery-card-h3, p {
-        font-size: 1rem;
-    }
-
-    .rtc--swingman-products-gallery-card-notfound {
-        padding: 12rem 0 14rem 0;
-    }
-
+  .rtc--swingman-products-gallery-card-notfound {
+    padding: 12rem 0 14rem 0;
+  }
 }
 
 @media (max-width: 320px) {
+  .rtc--header-logo-h1 {
+    font-size: 2rem;
+    width: 14rem;
+    height: 2rem;
+  }
 
-    .rtc--header-logo-h1 {
-        font-size: 2rem;
-        width: 14rem;
-        height: 2rem;
-    }
+  .rtc--swingman-header-filters-menu-nba_logo {
+    left: 43.5%;
+  }
 
-    .rtc--swingman-header-filters-menu-nba_logo {
-        left: 43.5%;
-    }
+  .rtc--swingman-header-filters-sellers_label,
+  .rtc--swingman-header-filters-price_label {
+    font-size: 1rem;
+  }
 
-    .rtc--swingman-header-filters-sellers_label,
-    .rtc--swingman-header-filters-price_label {
-        font-size: 1rem; 
-    }
+  .rtc--swingman-header-filters-sellers_select option,
+  .rtc--swingman-header-filters-price_input,
+  .rtc--swingman-header-filters-price_search,
+  .rtc--swingman-header-filters-cleaner_button {
+    font-size: 0.8rem;
+  }
 
-    .rtc--swingman-header-filters-sellers_select option,
-    .rtc--swingman-header-filters-price_input,
-    .rtc--swingman-header-filters-price_search,
-    .rtc--swingman-header-filters-cleaner_button {
-        font-size: 0.8rem; 
-    }
+  .rtc--swingman-header-filters-sellers_input,
+  .rtc--swingman-header-filters-price_input,
+  .rtc--swingman-header-filters-price_search,
+  .rtc--swingman-header-filters-cleaner_button {
+    height: 1.75rem;
+  }
 
-    .rtc--swingman-header-filters-sellers_input,
-    .rtc--swingman-header-filters-price_input,
-    .rtc--swingman-header-filters-price_search,
-    .rtc--swingman-header-filters-cleaner_button {
-        height: 1.75rem;
-    }
+  .rtc--swingman-header-filters-cleaner_div {
+    padding-top: 4rem;
+  }
 
-    .rtc--swingman-header-filters-cleaner_div {
-        padding-top: 4rem;
-    }
+  .rtc--swingman-products-gallery-card-img {
+    width: 80%;
+    height: 12rem;
+  }
 
-    .rtc--swingman-products-gallery-card-img {
-        width: 80%;
-        height: 12rem;
-    }
-
-    .rtc--swingman-products-gallery-card-h3, p {
-        font-size: 0.85rem;
-    }
-
+  .rtc--swingman-products-gallery-card-h3,
+  p {
+    font-size: 0.85rem;
+  }
 }
