@@ -4,6 +4,7 @@ export const createFiltersCleaner = () => {
 
     const cleanerContainer = document.createElement('div');
     cleanerContainer.classList.add('rtc--swingman-header-filters-cleaner_div');
+    cleanerContainer.classList.add('rtc--flex');
     const cleaner_title = 'limpiar filtros';
 
     const button = document.createElement('button');

@@ -19,6 +19,7 @@ const createFooter = () => {
 
     const socialWebsList = document.createElement('ul');
     socialWebsList.className = 'rtc--swingman-footer-social_webs';
+    socialWebsList.classList.add('rtc--flex');
 
     socialWebs.forEach((socialWeb) => socialWebsList.innerHTML += socialWebTemplate(socialWeb));
 

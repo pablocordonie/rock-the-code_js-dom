@@ -4,6 +4,7 @@ export const createPriceFilter = () => {
 
     const priceContainer = document.createElement('div');
     priceContainer.classList.add('rtc--swingman-header-filters-price_div');
+    priceContainer.classList.add('rtc--flex');
     const price_title = 'precio';
 
     const label = document.createElement('label');

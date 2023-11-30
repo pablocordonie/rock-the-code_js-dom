@@ -5,6 +5,7 @@ export const createSellersFilter = () => {
 
     const sellersContainer = document.createElement('div');
     sellersContainer.classList.add('rtc--swingman-header-filters-sellers_div');
+    sellersContainer.classList.add('rtc--flex');
     const sellers_title = 'vendedores';
 
     const label = document.createElement('label');
