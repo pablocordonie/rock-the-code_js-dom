@@ -4,7 +4,7 @@
 
   - Según el orden establecido de arriba a abajo y de izquierda a derecha, permite acceder a:
 
-    - El menú de filtros, en el cual se puede seleccionar uno de ellos para filtrar los productos ofertados, o bien seleccionar el último de ellos para resetear el contenido de la galería de productos.
+    - El menú de filtros, en el cual se puede seleccionar los dos primeros para filtrar los productos ofertados, o bien seleccionar el último filtro para resetear el contenido de la galería de productos.
 
     - La página web real de cada camiseta ofertada al clicar sobre ella.
 

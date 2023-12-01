@@ -22,6 +22,7 @@
 
   /* FONT-SIZE */
   --rtc-font-size-mini: 0.75rem;
+  --rtc-font-size-card: 0.8rem;
   --rtc-font-size-x1: 1rem;
   --rtc-font-size-x1dot125: 1.125rem;
   --rtc-font-size-x2: 2rem;
@@ -29,16 +30,26 @@
 
   /* GAP */
 
+  --rtc-gap-dot75: 0.75rem;
   --rtc-gap-x1: 1rem;
   --rtc-gap-x1dot5: 1.5rem;
   --rtc-gap-x2: 2rem;
+  --rtc-gap-x2dot5: 2.5rem;
   --rtc-gap-x4: 4rem;
+
+  /* LINE-HEIGHT */
+
+  --rtc-line-height: 1.2rem;
 
   /* HEIGHT */
 
   --rtc-height-x2: 2rem;
+  --rtc-height-x2dot5: 2.5rem;
   --rtc-height-x3: 3rem;
+  --rtc-height-x3dot5: 3.5rem;
   --rtc-height-img: 16rem;
+  --rtc-height-item: 20rem;
+  --rtc-height-100: 100%;
 
   /* MARGIN */
 
@@ -47,6 +58,11 @@
   --rtc-margin-x2dot5: 2.5rem;
   --rtc-margin-x3: 3rem;
   --rtc-margin-x5: 5rem;
+  --rtc-margin-x6: 6rem;
+  --rtc-margin-x8: 8rem;
+  --rtc-margin-x12: 12rem;
+  --rtc-margin-x16: 16rem;
+  --rtc-margin-x28: 28rem;
 
   /* PADDING */
 
@@ -57,17 +73,23 @@
   --rtc-padding-x3: 3rem;
   --rtc-padding-x4: 4rem;
   --rtc-padding-x8: 8rem;
+  --rtc-padding-x16: 16rem;
+  --rtc-padding-x32: 32rem;
 
   /* POSITION */
 
+  --rtc-position-left-nba_logo: -0.285rem;
   --rtc-position-left-mobile-s: 43.5%;
   --rtc-position-left-mobile-m: 45%;
   --rtc-position-left-mobile-l: 47%;
+  --rtc-position-top-nba_logo: 92.5%;
 
   /* WIDTH */
 
   --rtc-width-x2: 2rem;
+  --rtc-width-x2dot5: 2.5rem;
   --rtc-width-x8: 8rem;
+  --rtc-width-item: 10rem;
   --rtc-width-75: 75%;
   --rtc-width-100: 100%;
 }
@@ -141,6 +163,7 @@ footer p {
 }
 
 .rtc--swingman-header-filters-menu-img {
+  cursor: pointer;
   height: var(--rtc-height-x3);
 }
 
@@ -192,11 +215,18 @@ footer p {
   text-align: center;
 }
 
+.rtc--swingman-header-filters-sellers_select,
 .rtc--swingman-header-filters-sellers_select option,
 .rtc--swingman-header-filters-price_input,
 .rtc--swingman-header-filters-price_search,
 .rtc--swingman-header-filters-cleaner_button {
   font-size: var(--rtc-font-size-mini);
+}
+
+.rtc--swingman-header-filters-sellers_select,
+.rtc--swingman-header-filters-price_search,
+.rtc--swingman-header-filters-cleaner_button {
+  cursor: pointer;
 }
 
 .rtc--swingman-header-filters-cleaner_div {
@@ -209,7 +239,8 @@ footer p {
 }
 
 .rtc--swingman-products-gallery-card-notfound {
-  padding: var(--rtc-padding-x8) var(--rtc-padding-x2);
+  padding: var(--rtc-padding-x8) var(--rtc-padding-x2) var(--rtc-padding-x16)
+    var(--rtc-padding-x2);
   text-align: center;
 }
 
@@ -246,6 +277,7 @@ footer p {
 
 .rtc--swingman-products-gallery-card-h3 {
   font-size: var(--rtc-font-size-x1);
+  height: var(--rtc-height-x3dot5);
   width: var(--rtc-width-75);
   text-align: center;
 }
@@ -262,13 +294,13 @@ footer p {
   height: var(--rtc-height-x2);
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .rtc--swingman-products-gallery {
     margin: 0 var(--rtc-margin-x2dot5);
   }
 }
 
-@media (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .rtc--swingman-header-filters-menu-nba_logo {
     left: var(--rtc-position-left-mobile-m);
   }
@@ -278,82 +310,112 @@ footer p {
   }
 }
 
-@media (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .rtc--swingman-products-gallery {
     margin: 0 var(--rtc-margin-x5);
   }
 }
-/*
-@media (min-width: 450px) {
-  
-}*/
 
-@media (min-width: 540px) {
-  /*
+@media screen and (min-width: 500px) {
   .rtc--swingman-products-gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--rtc-gap-x2);
+    justify-content: space-between;
+    gap: var(--rtc-gap-x2dot5);
+  }
+
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x2dot5);
   }
 
   .rtc--swingman-products-gallery-item {
     width: 45%;
   }
 
-  .rtc--swingman-products-gallery-card {
-    gap: 0;
+  .rtc--swingman-products-gallery-card-notfound {
+    padding-bottom: var(--rtc-padding-x32);
   }
-
-  .rtc--swingman-products-gallery-card-img {
-    width: 80%;
-  }
-
-  .rtc--swingman-products-gallery-card-h3,
-  p {
-    font-size: 1rem;
-  }*/
 }
 
-@media (min-width: 768px) {
-  /*
+@media screen and (min-width: 768px) {
+  footer p {
+    padding-left: var(--rtc-padding-x3);
+  }
+
+  .rtc--swingman-header-filters-menu {
+    height: var(--rtc-height-100);
+    width: var(--rtc-width-x2dot5);
+  }
+
   .rtc--swingman-header-logo {
     margin-top: var(--rtc-margin-half);
   }
 
-  .rtc--swingman-header-filters-menu {
-    width: 2.5rem;
-    height: 100%;
-  }
-
   .rtc--swingman-header-filters-menu-img {
-    width: 2.5rem;
-    height: 2.5rem;
+    height: var(--rtc-height-x2dot5);
   }
 
   .rtc--swingman-header-filters-menu-nba_logo {
-    left: -0.285rem;
-    top: 92.5%;
+    left: var(--rtc-position-left-nba_logo);
+    top: var(--rtc-position-top-nba_logo);
   }
 
   .rtc--swingman-products-gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 var(--rtc-margin-x5);
   }
 
   .rtc--swingman-products-gallery-item {
-    display: flex;
-    height: 20rem;
-    width: 12rem;
+    height: var(--rtc-height-item);
+    width: var(--rtc-width-item);
   }
 
   .rtc--swingman-products-gallery-card {
-    gap: 0;
+    gap: var(--rtc-gap-dot75);
   }
 
   .rtc--swingman-products-gallery-card-h3,
   p {
-    font-size: 0.9rem;
-  }*/
+    font-size: var(--rtc-font-size-card);
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .rtc--swingman-products {
+    margin-bottom: var(--rtc-margin-x8);
+  }
+
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x6);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x8);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rtc--swingman-products {
+    margin-bottom: var(--rtc-margin-x12);
+  }
+
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x12);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x16);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .rtc--swingman-products-gallery {
+    margin: 0 var(--rtc-margin-x28);
+  }
 }

@@ -30,7 +30,7 @@ export const displayFiltersMenu = () => {
 
     const menu = document.querySelector('.rtc--swingman-header-filters-menu');;
     const menuImg = document.querySelector('.rtc--swingman-header-filters-menu-img');
-    const devicesLimit = matchMedia('(max-width: 768px)');
+    const devicesLimit = matchMedia('(max-width: 767px)');
 
     if (screen.width < 768) {
         menuImg.addEventListener('click', toggleVerticalMenu);

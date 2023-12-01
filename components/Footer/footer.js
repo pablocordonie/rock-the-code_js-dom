@@ -1,6 +1,6 @@
 const socialWebs = [
     { web: 'facebook', image: './assets/facebook.png', link: 'https://es-es.facebook.com/' },
-    { web: 'twitter', image: './assets/twitter.png', link: 'https://twitter.com/?lang=ES' },
+    { web: 'twitter', image: './assets/x.webp', link: 'https://twitter.com/?lang=ES' },
     { web: 'instagram', image: './assets/instagram.png', link: 'https://www.instagram.com/' }
 ];
 
