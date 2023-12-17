@@ -23,13 +23,13 @@ export const createSellersFilter = () => {
     select.setAttribute('role', 'select');
     select.setAttribute('aria-label', 'Haz click aquí para acceder a la lista de vendedores');
 
-    const emptyOption = document.createElement('option');
-    emptyOption.innerText = 'Todos los vendedores';
-    emptyOption.setAttribute('value', 'Todos los vendedores');
-    emptyOption.classList.add('rtc--swingman-header-filters-sellers-empty_option');
-    emptyOption.setAttribute('role', 'option');
-    emptyOption.setAttribute('aria-label', '#');
-    select.appendChild(emptyOption);
+    const allTheSellersOption = document.createElement('option');
+    allTheSellersOption.innerText = 'Todos';
+    allTheSellersOption.setAttribute('value', 'Todos');
+    allTheSellersOption.classList.add('rtc--swingman-header-filters-sellers-allTheSellers_option');
+    allTheSellersOption.setAttribute('role', 'option');
+    allTheSellersOption.setAttribute('aria-label', '#');
+    select.appendChild(allTheSellersOption);
 
     const sellers = [];
 

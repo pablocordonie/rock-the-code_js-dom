@@ -12,7 +12,7 @@ export const toFilterSellers = (event) => {
     const selectedEmptyOption = event.target.selectedOptions[0];
     const input = document.querySelector('.rtc--swingman-header-filters-price_input');
 
-    if (selectedEmptyOption.value !== 'Todos los vendedores') {
+    if (selectedEmptyOption.value !== 'Todos') {
 
         if (filteredItems.length) {
 
