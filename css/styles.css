@@ -182,6 +182,10 @@ footer p {
     var(--rtc-padding-x4);
 }
 
+.rtc--swingman-header-filters-sellers_select option {
+  text-align: center;
+}
+
 .rtc--swingman-header-filters-sellers_label {
   color: var(--rtc-color-n-700);
   font-family: 'Lato', sans-serif;

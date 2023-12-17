@@ -12,7 +12,7 @@ export const toFilterSellers = (event) => {
     const selectedEmptyOption = event.target.selectedOptions[0];
     const input = document.querySelector('.rtc--swingman-header-filters-price_input');
 
-    if (selectedEmptyOption.value !== '') {
+    if (selectedEmptyOption.value !== 'Todos los vendedores') {
 
         if (filteredItems.length) {
 
@@ -20,16 +20,11 @@ export const toFilterSellers = (event) => {
 
                 if (filteredItem.seller !== event.target.value && input.value === '') {
 
-                    filteredItems = [];
                     filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value);
 
                 } else if (filteredItem.seller !== event.target.value && filteredItem.price <= input.value) {
 
-                    filteredItem = {};
-
-                } else if (filteredItem.seller === event.target.value && filteredItem.price <= input.value) {
-
-                    filteredItems = filteredItems.filter((product) => product.seller === event.target.value);
+                    filteredItems = swingmanProducts.filter((product) => product.seller === event.target.value && product.price <= input.value);
 
                 }
 
@@ -43,7 +38,7 @@ export const toFilterSellers = (event) => {
 
     } else {
 
-        return;
+        filteredItems = swingmanProducts.map(product => product);
 
     }
 
@@ -124,7 +119,7 @@ export const toggleHorizontalMenu = () => {
 
     if (!abierto) {
 
-        menu.style.width = '24rem';
+        menu.style.width = '16rem';
         abierto = true;
         menu.appendChild(createSellersFilter());
         menu.appendChild(createPriceFilter());

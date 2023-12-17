@@ -24,7 +24,8 @@ export const createSellersFilter = () => {
     select.setAttribute('aria-label', 'Haz click aquí para acceder a la lista de vendedores');
 
     const emptyOption = document.createElement('option');
-    emptyOption.setAttribute('value', '');
+    emptyOption.innerText = 'Todos los vendedores';
+    emptyOption.setAttribute('value', 'Todos los vendedores');
     emptyOption.classList.add('rtc--swingman-header-filters-sellers-empty_option');
     emptyOption.setAttribute('role', 'option');
     emptyOption.setAttribute('aria-label', '#');
